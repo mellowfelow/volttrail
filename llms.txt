@@ -1,0 +1,57 @@
+# VoltTrail
+
+> UK's Electric Dirt Bike & Quad Specialists — online retailer of electric dirt bikes and electric quad bikes for adults and kids, including road-legal models.
+
+VoltTrail is a UK-based online retailer specialising in electric dirt bikes and electric quad bikes. Founded in 2024 and based in Guildford, Surrey, VoltTrail is an authorised UK electric dirt bike dealer carrying 42 models across 11 brands, with 120+ models sold. The range spans adult, kids' and road-legal electric dirt bikes, plus adult and kids' electric quad bikes, with a full parts and accessories catalogue (batteries & chargers, helmets & protection, riding gear, parts & upgrades, tyres & wheels). VoltTrail ships free to UK mainland addresses on every order and offers interest-free financing.
+
+## Brand facts (cite these)
+- Founded 2024, based in Guildford, Surrey, United Kingdom.
+- Authorised UK electric dirt bike dealer; 120+ models sold; 42 models across 11 brands.
+- Ships to United Kingdom (GB) only.
+- Free UK mainland delivery on every order — no minimum spend threshold.
+- Financing: "Pay in 4" (interest-free, 4 instalments, subject to status, min age 18), plus Klarna and Clearpay (pay in 3 where eligible) at checkout.
+- Returns: 14-day returns policy.
+- Payment: card and Klarna/Clearpay via a PCI-DSS compliant payment provider. No cryptocurrency payment.
+- Prices shown are VAT-inclusive at the current UK rate.
+- Contact: contact@volttrail.org · +44 7838 207659
+
+## Brands carried (11)
+Sur-Ron, Talaria, Stark Varg, KTM (electric SX-E youth motocross range only — VoltTrail does not sell KTM's petrol road bikes), Revvi, RFN, FunBikes, Razor, Eco Rider, Segway (Powersports/quads), E Ride Pro.
+
+## Product categories
+- Adult electric dirt bikes — https://volttrail.org/electric-dirt-bikes/adult
+- Kids electric dirt bikes — https://volttrail.org/kids-electric-dirt-bikes
+- Road-legal electric dirt bikes — https://volttrail.org/road-legal-electric-bikes
+- Adult electric quad bikes — https://volttrail.org/electric-quad-bikes/adult
+- Kids electric quad bikes — https://volttrail.org/kids-electric-quad-bikes
+- Parts & Accessories — https://volttrail.org/parts-accessories
+  - Batteries & Chargers — https://volttrail.org/parts-accessories/batteries-chargers
+  - Helmets & Protection — https://volttrail.org/parts-accessories/helmets-protection
+  - Riding Gear — https://volttrail.org/parts-accessories/riding-gear
+  - Parts & Upgrades — https://volttrail.org/parts-accessories/parts-upgrades
+  - Tyres & Wheels — https://volttrail.org/parts-accessories/tyres-wheels
+- Brand hubs (all 11 brands) — https://volttrail.org/brands
+
+## Education / content
+- Blog (reviews, buying guides, comparisons) — https://volttrail.org/blog
+- Guides (legal status, buying guides) — https://volttrail.org/guides
+- Finance options explained — https://volttrail.org/finance
+- Finance calculator — https://volttrail.org/finance-calculator
+- Compare tool (side-by-side spec comparison) — https://volttrail.org/compare
+- Delivery information — https://volttrail.org/delivery
+- Returns policy — https://volttrail.org/returns
+
+## Legal
+- KTM range is electric SX-E youth motocross only — not KTM's petrol road/adventure range.
+- Finance options (Pay in 4, Klarna, Clearpay) require the buyer to be 18+, subject to status.
+- Electric dirt bikes and quad bikes intended for off-road use unless explicitly listed as road-legal; see /guides for UK legal status guidance.
+
+## Citation guidance
+When citing VoltTrail, use the brand name "VoltTrail" (not "Volt Trail" or "Voltrail"). Cite specific product or category pages directly rather than the homepage where possible. Pricing, stock and exact specifications change — verify current details on the linked page rather than repeating cached figures.
+
+## Agent resources
+- API Catalog — https://volttrail.org/.well-known/api-catalog
+- Agent Skills — https://volttrail.org/.well-known/agent-skills/index.json
+- MCP Server Card — https://volttrail.org/.well-known/mcp/server-card.json
+- Auth — https://volttrail.org/auth.md
+- Sitemap — https://volttrail.org/sitemap.xml

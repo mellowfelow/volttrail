@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "VoltTrail",
+  "url": "https://volttrail.org",
+  "description": "UK's Electric Dirt Bike & Quad Specialists — electric dirt bikes and electric quad bikes for adults and kids, plus parts, accessories and finance.",
+  "skills": [
+    {
+      "name": "browse-dirt-bikes",
+      "type": "navigation",
+      "description": "Browse adult, kids and road-legal electric dirt bikes by brand and category",
+      "url": "https://volttrail.org/electric-dirt-bikes",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browse-quad-bikes",
+      "type": "navigation",
+      "description": "Browse adult and kids electric quad bikes",
+      "url": "https://volttrail.org/electric-quad-bikes",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "browse-parts-accessories",
+      "type": "navigation",
+      "description": "Browse batteries, chargers, helmets, protection, riding gear, tyres and wheels",
+      "url": "https://volttrail.org/parts-accessories",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compare-models",
+      "type": "content",
+      "description": "Side-by-side spec comparison across electric dirt bike and quad bike models",
+      "url": "https://volttrail.org/compare",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "finance-info",
+      "type": "commerce",
+      "description": "Explains Pay in 4, Klarna and Clearpay financing options for UK buyers 18+",
+      "url": "https://volttrail.org/finance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "product-education",
+      "type": "content",
+      "description": "Reviews, buying guides and comparisons covering every brand VoltTrail carries",
+      "url": "https://volttrail.org/blog",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "legal-guides",
+      "type": "content",
+      "description": "UK legal-status guides — road-legal requirements, age rules, licensing",
+      "url": "https://volttrail.org/guides",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "contact",
+      "type": "support",
+      "description": "Contact VoltTrail for product questions, orders or support",
+      "url": "https://volttrail.org/contact",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# VoltTrail robots.txt
+User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+Allow: /
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-confirmation
+Disallow: /search
+Disallow: /newsletter
+Disallow: /_redirects
+Disallow: /_headers
+Crawl-delay: 2
+
+# AI assistants & answer engines — explicitly allowed (AI visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Agent-readable resources
+# llms.txt: https://volttrail.org/llms.txt
+# API Catalog: https://volttrail.org/.well-known/api-catalog
+# Agent Skills: https://volttrail.org/.well-known/agent-skills/index.json
+# MCP Server Card: https://volttrail.org/.well-known/mcp/server-card.json
+
+Sitemap: https://volttrail.org/sitemap.xml

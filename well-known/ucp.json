@@ -1,0 +1,52 @@
+{
+  "ucp": "1.0",
+  "protocol_version": "1.0",
+  "spec": "https://ucp.dev/specification/overview/",
+  "schema": "https://ucp.dev/schema/v1.json",
+  "site": "https://volttrail.org",
+  "name": "VoltTrail",
+  "description": "UK's Electric Dirt Bike & Quad Specialists — electric dirt bikes and electric quad bikes for adults and kids, including road-legal models.",
+  "services": [
+    {
+      "id": "dirt-bike-catalog",
+      "type": "catalog",
+      "url": "https://volttrail.org/electric-dirt-bikes",
+      "description": "Adult, kids and road-legal electric dirt bikes"
+    },
+    {
+      "id": "quad-bike-catalog",
+      "type": "catalog",
+      "url": "https://volttrail.org/electric-quad-bikes",
+      "description": "Adult and kids electric quad bikes"
+    },
+    {
+      "id": "parts-accessories",
+      "type": "catalog",
+      "url": "https://volttrail.org/parts-accessories",
+      "description": "Batteries, chargers, helmets, protection, riding gear, tyres and wheels"
+    },
+    {
+      "id": "checkout",
+      "type": "commerce",
+      "url": "https://volttrail.org/checkout",
+      "description": "Self-service checkout, completed by the human shopper — card, Klarna, Clearpay"
+    }
+  ],
+  "capabilities": ["browse", "compare", "content"],
+  "endpoints": {
+    "catalog": "https://volttrail.org/electric-dirt-bikes",
+    "contact": "https://volttrail.org/contact",
+    "agent_skills": "https://volttrail.org/.well-known/agent-skills/index.json",
+    "mcp_server_card": "https://volttrail.org/.well-known/mcp/server-card.json",
+    "api_catalog": "https://volttrail.org/.well-known/api-catalog",
+    "llms_txt": "https://volttrail.org/llms.txt"
+  },
+  "currency": "GBP",
+  "minimum_order_gbp": "0",
+  "payment_methods": ["card", "klarna", "clearpay"],
+  "legal": {
+    "age_restriction": "18+ for finance options only, subject to status",
+    "product_type": "Electric dirt bikes, electric quad bikes, parts and riding gear",
+    "compliance": "UK consumer law; VAT-inclusive pricing"
+  }
+}

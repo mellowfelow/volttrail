@@ -1,0 +1,47 @@
+# Auth.md
+
+**Site:** VoltTrail (https://volttrail.org)
+**Type:** UK ecommerce — electric dirt bikes & electric quad bikes
+
+## Agent Registration
+
+No authentication or registration is required to browse, read, or catalogue any content on volttrail.org. All product, category, blog and guide pages are public. There is no agent API key or credential to obtain.
+
+## Public resources
+
+| Resource | URL |
+|---|---|
+| Homepage | https://volttrail.org/ |
+| Product catalog (dirt bikes) | https://volttrail.org/electric-dirt-bikes |
+| Product catalog (quad bikes) | https://volttrail.org/electric-quad-bikes |
+| Parts & Accessories | https://volttrail.org/parts-accessories |
+| Brand hubs | https://volttrail.org/brands |
+| Blog | https://volttrail.org/blog |
+| Guides | https://volttrail.org/guides |
+| Compare tool | https://volttrail.org/compare |
+| Finance info | https://volttrail.org/finance |
+| Contact | https://volttrail.org/contact |
+| Sitemap | https://volttrail.org/sitemap.xml |
+| llms.txt | https://volttrail.org/llms.txt |
+| API Catalog | https://volttrail.org/.well-known/api-catalog |
+| Agent Skills | https://volttrail.org/.well-known/agent-skills/index.json |
+| MCP Server Card | https://volttrail.org/.well-known/mcp/server-card.json |
+
+```json
+{
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": ["none"],
+    "credential_types_supported": ["none"],
+    "notes": "No authentication required. All resources are public."
+  }
+}
+```
+
+## Ordering (human-in-the-loop)
+
+VoltTrail's checkout (`/cart`, `/checkout`) accepts payment via card, Klarna and Clearpay through a PCI-DSS compliant provider. Agents may help a shopper browse products, compare specs, and build a cart, but payment capture must be completed by the human shopper in-browser. No agent endpoint on this site accepts or processes payment.
+
+## Age restriction
+
+VoltTrail's finance options — Pay in 4, Klarna, and Clearpay — require the buyer to be 18 or older, subject to status. There is no site-wide age restriction on browsing or direct card purchase.

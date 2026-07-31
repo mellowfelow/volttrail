@@ -1,0 +1,36 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://volttrail.org/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        { "href": "https://volttrail.org/guides" }
+      ],
+      "title": "VoltTrail — UK's Electric Dirt Bike & Quad Specialists"
+    },
+    {
+      "anchor": "https://volttrail.org/electric-dirt-bikes",
+      "type": "text/html",
+      "title": "VoltTrail Electric Dirt Bike Catalog"
+    },
+    {
+      "anchor": "https://volttrail.org/electric-quad-bikes",
+      "type": "text/html",
+      "title": "VoltTrail Electric Quad Bike Catalog"
+    },
+    {
+      "anchor": "https://volttrail.org/parts-accessories",
+      "type": "text/html",
+      "title": "VoltTrail Parts & Accessories Catalog"
+    },
+    {
+      "anchor": "https://volttrail.org/brands",
+      "type": "text/html",
+      "title": "VoltTrail Brand Hubs"
+    },
+    {
+      "anchor": "https://volttrail.org/blog",
+      "type": "text/html",
+      "title": "VoltTrail Blog — Reviews, Buying Guides & Comparisons"
+    }
+  ]
+}

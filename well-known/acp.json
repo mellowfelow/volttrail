@@ -1,0 +1,30 @@
+{
+  "protocol": {
+    "name": "acp",
+    "version": "0.1.0"
+  },
+  "name": "VoltTrail",
+  "description": "UK's Electric Dirt Bike & Quad Specialists — electric dirt bikes and electric quad bikes for adults and kids, including road-legal models.",
+  "api_base_url": "https://volttrail.org",
+  "homepage": "https://volttrail.org",
+  "transports": ["https"],
+  "capabilities": {
+    "services": ["product-catalog", "parts-accessories", "blog", "guides", "compare"],
+    "ordering": "human-completed-checkout",
+    "payment_methods": ["card", "klarna", "clearpay"],
+    "currency": "GBP",
+    "minimum_order_gbp": "0",
+    "free_shipping_threshold_gbp": "0"
+  },
+  "contact": {
+    "email": "contact@volttrail.org",
+    "phone": "+44 7838 207659"
+  },
+  "legal": {
+    "age_restriction": "18+ for finance options only (Pay in 4, Klarna, Clearpay), subject to status",
+    "region": "United Kingdom",
+    "ships_to": "United Kingdom (GB) only",
+    "product_type": "Electric dirt bikes, electric quad bikes, parts and riding gear",
+    "compliance": "UK consumer law; VAT-inclusive pricing"
+  }
+}

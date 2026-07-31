@@ -1,0 +1,11 @@
+{
+  "resource": "https://volttrail.org",
+  "resource_name": "VoltTrail Public Catalog",
+  "authorization_servers": [],
+  "scopes_supported": [],
+  "bearer_methods_supported": [],
+  "resource_documentation": "https://volttrail.org/auth.md",
+  "resource_policy_uri": "https://volttrail.org/terms-and-conditions",
+  "tls_client_certificate_bound_access_tokens": false,
+  "note": "All resources on volttrail.org are publicly accessible. No OAuth tokens are required."
+}

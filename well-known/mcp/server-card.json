@@ -1,0 +1,60 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "serverInfo": {
+    "name": "VoltTrail",
+    "version": "1.0.0",
+    "description": "UK's Electric Dirt Bike & Quad Specialists — online retailer of electric dirt bikes and electric quad bikes for adults and kids, including road-legal models.",
+    "homepage": "https://volttrail.org",
+    "contact": {
+      "email": "contact@volttrail.org",
+      "phone": "+44 7838 207659"
+    }
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "https://volttrail.org"
+  },
+  "capabilities": {
+    "resources": [
+      {
+        "name": "dirt-bike-catalog",
+        "description": "Adult, kids and road-legal electric dirt bikes",
+        "uri": "https://volttrail.org/electric-dirt-bikes"
+      },
+      {
+        "name": "quad-bike-catalog",
+        "description": "Adult and kids electric quad bikes",
+        "uri": "https://volttrail.org/electric-quad-bikes"
+      },
+      {
+        "name": "parts-accessories-catalog",
+        "description": "Batteries, chargers, helmets, protection, riding gear, tyres and wheels",
+        "uri": "https://volttrail.org/parts-accessories"
+      },
+      {
+        "name": "blog",
+        "description": "Reviews, buying guides and brand comparisons",
+        "uri": "https://volttrail.org/blog"
+      },
+      {
+        "name": "guides",
+        "description": "UK legal-status and buying guides",
+        "uri": "https://volttrail.org/guides"
+      }
+    ],
+    "commerce": {
+      "ordering": "self-service checkout at /checkout, completed by the human shopper in-browser",
+      "payment": ["card", "klarna", "clearpay"],
+      "currency": "GBP",
+      "minimumOrder": "none",
+      "freeShipping": "Free UK mainland delivery on every order",
+      "ships": "United Kingdom (GB) only",
+      "returns": "14-day returns policy"
+    }
+  },
+  "legal": {
+    "ageRestriction": "Finance options (Pay in 4, Klarna, Clearpay) require the buyer to be 18+, subject to status. No age restriction on browsing or direct card purchase.",
+    "productType": "Electric dirt bikes, electric quad bikes, parts and riding gear",
+    "compliance": "UK consumer law; VAT-inclusive pricing; KTM range is electric SX-E youth motocross only, not KTM's petrol road range."
+  }
+}

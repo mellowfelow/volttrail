@@ -1,0 +1,27 @@
+{
+  "issuer": "https://volttrail.org",
+  "authorization_endpoint": null,
+  "token_endpoint": null,
+  "jwks_uri": null,
+  "grant_types_supported": [],
+  "response_types_supported": [],
+  "scopes_supported": [],
+  "note": "VoltTrail has no protected APIs. All resources are publicly accessible.",
+  "public_resources": [
+    "https://volttrail.org/electric-dirt-bikes",
+    "https://volttrail.org/electric-quad-bikes",
+    "https://volttrail.org/parts-accessories",
+    "https://volttrail.org/blog",
+    "https://volttrail.org/guides",
+    "https://volttrail.org/llms.txt",
+    "https://volttrail.org/.well-known/api-catalog",
+    "https://volttrail.org/.well-known/agent-skills/index.json",
+    "https://volttrail.org/.well-known/mcp/server-card.json"
+  ],
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": ["none"],
+    "credential_types_supported": ["none"],
+    "notes": "No registration required. All content is publicly accessible to agents."
+  }
+}

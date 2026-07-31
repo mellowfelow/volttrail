@@ -1,0 +1,31 @@
+# VoltTrail — Cloudflare Pages redirects
+# Real per-route static files are served directly. Unmatched paths fall through to 404.html.
+# Canonicalisation: force apex host (www -> non-www). Cloudflare auto-upgrades http -> https.
+https://www.volttrail.org/*  https://volttrail.org/:splat  301!
+
+# Agent-ready files: the .well-known dotfolder cannot be uploaded via the CF dashboard
+# (Cloudflare ignores dot-prefixed folders AND rejects extensionless files on Direct Upload).
+# Files live in /well-known/ with .json extensions and are proxied (200 rewrite) to their
+# canonical /.well-known/ URLs (extensionless where the spec requires it) so agents/scanners
+# find them at the spec-required paths.
+/.well-known/api-catalog                /well-known/api-catalog.json                200
+/.well-known/agent-skills/index.json    /well-known/agent-skills/index.json         200
+/.well-known/mcp/server-card.json       /well-known/mcp/server-card.json            200
+/.well-known/oauth-protected-resource   /well-known/oauth-protected-resource.json   200
+/.well-known/oauth-authorization-server /well-known/oauth-authorization-server.json 200
+/.well-known/openid-configuration       /well-known/openid-configuration.json       200
+/.well-known/acp.json                   /well-known/acp.json                        200
+/.well-known/ucp                        /well-known/ucp.json                        200
+/auth.md                                /auth.txt                                   200
+
+# Legacy product URLs -> canonical product pages
+/electric-dirt-bikes/surron-ultra-bee-mx-2025   /product/ultra-bee         301
+/electric-dirt-bikes/talaria-sting-r-off-road   /product/talaria-sting-r   301
+/electric-dirt-bikes/stark-varg-mx-1-2          /product/stark-mx          301
+
+# Legacy short URLs
+/faq        /guides                 301
+/legal      /guides                 301
+/privacy    /privacy-policy         301
+/terms      /terms-and-conditions   301
+/cookies    /cookie-policy          301
