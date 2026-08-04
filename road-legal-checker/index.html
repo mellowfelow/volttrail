@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK Road-Legal Electric Bike Checker (2026) | VoltTrail</title>
+<meta name="description" content="Free UK road-legal checker for electric dirt bikes and eMotos. Find out if a Sur-Ron, Talaria, Stark Varg or Zero needs a licence, CBT, registration and insurance.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://volttrail.org/road-legal-checker">
+<link rel="alternate" hreflang="en-gb" href="https://volttrail.org/road-legal-checker">
+<link rel="alternate" hreflang="x-default" href="https://volttrail.org/road-legal-checker">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VoltTrail">
+<meta property="og:title" content="UK Road-Legal Electric Bike Checker (2026)">
+<meta property="og:description" content="Find out in seconds if an electric dirt bike is road legal in the UK — licence, CBT, registration and insurance requirements explained.">
+<meta property="og:url" content="https://volttrail.org/road-legal-checker">
+<meta property="og:image" content="https://volttrail.org/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UK Road-Legal Electric Bike Checker (2026)">
+<meta name="twitter:description" content="Find out in seconds if an electric dirt bike is road legal in the UK — licence, CBT, registration and insurance requirements explained.">
+<meta name="twitter:image" content="https://volttrail.org/og-image.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "UK Road-Legal Electric Bike Checker",
+  "url": "https://volttrail.org/road-legal-checker",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "description": "A free tool to check whether an electric dirt bike or eMoto is road legal in the UK, including licence, CBT, registration and insurance requirements.",
+  "publisher": { "@type": "Organization", "name": "VoltTrail", "url": "https://volttrail.org/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://volttrail.org/" },
+    { "@type": "ListItem", "position": 2, "name": "Road-Legal Checker", "item": "https://volttrail.org/road-legal-checker" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a Sur-Ron road legal in the UK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard Sur-Ron Light Bee X or Ultra Bee is not road legal in the UK. It has no type approval, so it can only be ridden on private land with the landowner's permission. The road-legal Sur-Ron Light Bee L1e is an exception: it is type-approved as a moped and can be used on the road with a CBT, registration, insurance and a number plate." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need a licence for an electric dirt bike in the UK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, unless the bike is an EAPC (pedals, 250W and assistance cutting off at 15.5mph). Any electric dirt bike used on public roads must be registered and needs at least a CBT (for a moped-category L1e bike) or a full motorcycle licence category for more powerful L3e machines, plus insurance and a helmet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ride an off-road electric bike on public land or bridleways?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A non-type-approved electric dirt bike is only legal on private land with the landowner's permission. Riding it on public roads, pavements, bridleways, byways or public parks is an offence, even electric and even if untaxed." }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0a0c0a; --panel:#1e231e; --volt:#aaff00; --volt-dim:#6daa00;
+  --white:#f0f2ee; --muted:#8a9488; --dim:#4a5248; --amber:#ffaa00; --red:#ff4040;
+  --font-head:'Bebas Neue',sans-serif; --font-sub:'Barlow Condensed',sans-serif; --font-body:'Barlow',sans-serif;
+}
+*{box-sizing:border-box;min-width:0;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100vw}
+body{background:var(--bg);color:var(--white);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto}
+a{color:var(--volt);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header.site{border-bottom:1px solid #222;background:#0c0f0c;position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--font-head);font-size:1.9rem;letter-spacing:1px;color:var(--white);line-height:1}
+.logo b{color:var(--volt)}
+header.site nav a{color:var(--muted);font-family:var(--font-sub);font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.5px;margin-left:18px}
+header.site nav a:hover{color:var(--volt);text-decoration:none}
+@media(max-width:560px){header.site nav a:not(.cta){display:none}}
+
+/* Hero */
+.hero{text-align:center;padding:48px 0 20px}
+.hero h1{font-family:var(--font-head);font-size:clamp(2.4rem,7vw,4rem);line-height:.95;letter-spacing:1px;text-transform:uppercase}
+.hero h1 span{color:var(--volt)}
+.hero p{color:var(--muted);max-width:600px;margin:14px auto 0;font-size:1.05rem}
+
+/* Mode toggle */
+.modes{display:flex;gap:8px;background:var(--panel);border-radius:12px;padding:6px;margin:28px 0 22px}
+.modes button{flex:1;background:none;border:0;color:var(--muted);font-family:var(--font-sub);font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:.95rem;padding:12px;border-radius:8px;cursor:pointer;transition:.15s}
+.modes button.active{background:var(--volt);color:#0a0c0a}
+
+/* Cards / controls */
+.card{background:var(--panel);border:1px solid #2a312a;border-radius:14px;padding:24px}
+label.f{display:block;font-family:var(--font-sub);font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-size:.85rem;margin:0 0 8px}
+select,.qbtns{width:100%}
+select{background:#0c0f0c;color:var(--white);border:1px solid #333;border-radius:10px;padding:14px;font-family:var(--font-body);font-size:1.05rem}
+select:focus{outline:2px solid var(--volt);outline-offset:1px}
+.q{margin-bottom:22px}
+.q:last-child{margin-bottom:0}
+.q h3{font-family:var(--font-sub);font-weight:600;font-size:1.1rem;margin-bottom:10px}
+.qbtns{display:flex;gap:10px;flex-wrap:wrap}
+.qbtns button{flex:1;min-width:120px;background:#0c0f0c;border:1px solid #333;color:var(--white);font-family:var(--font-body);font-size:1rem;padding:13px;border-radius:10px;cursor:pointer;transition:.15s}
+.qbtns button[aria-pressed="true"]{border-color:var(--volt);background:rgba(170,255,0,.12);color:var(--volt);font-weight:600}
+.qbtns button:hover{border-color:var(--volt)}
+.hint{color:var(--dim);font-size:.85rem;margin-top:7px}
+
+/* Result */
+.result{margin-top:22px;border-radius:14px;padding:24px;border:1px solid;display:none}
+.result.show{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.result .tag{font-family:var(--font-sub);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:.9rem}
+.result h2{font-family:var(--font-head);font-size:2rem;letter-spacing:.5px;margin:6px 0 10px;line-height:1}
+.result.legal{background:rgba(170,255,0,.08);border-color:var(--volt)}
+.result.legal .tag,.result.legal h2{color:var(--volt)}
+.result.offroad{background:rgba(255,64,64,.08);border-color:var(--red)}
+.result.offroad .tag,.result.offroad h2{color:var(--red)}
+.result.eapc{background:rgba(0,136,255,.08);border-color:#0088ff}
+.result.eapc .tag,.result.eapc h2{color:#3aa0ff}
+.result ul{list-style:none;margin:14px 0 0}
+.result li{padding:8px 0 8px 28px;position:relative;border-top:1px solid rgba(255,255,255,.06)}
+.result li:before{content:"";position:absolute;left:0;top:15px;width:12px;height:12px;border-radius:50%;background:currentColor;opacity:.7}
+.result .reqs{color:var(--white)}
+.ctarow{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--volt);color:#0a0c0a;font-family:var(--font-sub);font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:12px 20px;border-radius:10px}
+.btn:hover{background:#c2ff33;text-decoration:none}
+.btn.ghost{background:none;border:1px solid #3a423a;color:var(--white)}
+
+/* Info + footer */
+.info{margin-top:40px}
+.info h2{font-family:var(--font-head);font-size:1.8rem;letter-spacing:.5px;margin-bottom:6px}
+.info h3{font-family:var(--font-sub);font-weight:600;font-size:1.15rem;margin:20px 0 6px;color:var(--volt)}
+.info p{color:#cfd4cc;margin-bottom:10px}
+.disclaimer{margin-top:30px;padding:16px;border:1px dashed #3a423a;border-radius:10px;color:var(--muted);font-size:.88rem}
+footer.site{border-top:1px solid #222;margin-top:48px;padding:28px 0;background:#0c0f0c}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem}
+footer.site a{color:var(--muted);margin-right:16px}
+footer.site a:hover{color:var(--volt)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">Volt<b>Trail</b></a>
+    <nav aria-label="Primary">
+      <a href="/electric-dirt-bikes">Dirt Bikes</a>
+      <a href="/road-legal-electric-bikes">Road Legal</a>
+      <a href="/guides">Guides</a>
+      <a class="cta" href="/">Shop</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>UK Road-Legal <span>Checker</span></h1>
+    <p>Is your electric dirt bike legal on UK roads? Check the licence, CBT, registration and insurance rules in seconds — updated for 2026.</p>
+  </section>
+
+  <div class="modes" role="tablist" aria-label="Checker mode">
+    <button id="tab-bike" class="active" role="tab" aria-selected="true" onclick="setMode('bike')">Pick your bike</button>
+    <button id="tab-any" role="tab" aria-selected="false" onclick="setMode('any')">Check any bike</button>
+  </div>
+
+  <!-- Mode A: pick a bike -->
+  <section id="mode-bike" class="card">
+    <label class="f" for="bikeSel">Select a model</label>
+    <select id="bikeSel" onchange="checkBike()">
+      <option value="">— Choose a bike —</option>
+      <optgroup label="Road-legal models">
+        <option value="l1e">Sur-Ron Light Bee L1e (road-legal)</option>
+        <option value="l1e">Zero XB (road-legal)</option>
+        <option value="l1e">Zero XE (road-legal)</option>
+      </optgroup>
+      <optgroup label="Off-road / competition eMotos">
+        <option value="offroad">Sur-Ron Light Bee X (LBX)</option>
+        <option value="offroad">Sur-Ron Ultra Bee</option>
+        <option value="offroad">Sur-Ron Storm Bee</option>
+        <option value="offroad">Sur-Ron Hyper Bee</option>
+        <option value="offroad">Talaria Sting / MX-series</option>
+        <option value="offroad">Talaria XXX</option>
+        <option value="offroad">Stark Varg</option>
+        <option value="offroad">GasGas MC-E</option>
+        <option value="offroad">KTM SX-E</option>
+      </optgroup>
+      <optgroup label="Kids / youth bikes">
+        <option value="kids">Revvi / Funbikes / Razor (kids)</option>
+        <option value="kids">STACYC balance bikes</option>
+      </optgroup>
+    </select>
+    <p class="hint">Don't see your exact model? Use <a href="#" onclick="setMode('any');return false;">Check any bike</a>.</p>
+  </section>
+
+  <!-- Mode B: questionnaire -->
+  <section id="mode-any" class="card" style="display:none">
+    <div class="q">
+      <h3>1. Does it have working pedals, a motor of 250W or less, and does assistance stop at 15.5mph?</h3>
+      <div class="qbtns" data-q="pedals">
+        <button type="button" onclick="ans('pedals','yes',this)" aria-pressed="false">Yes, all three</button>
+        <button type="button" onclick="ans('pedals','no',this)" aria-pressed="false">No</button>
+      </div>
+      <p class="hint">This is the legal definition of an EAPC (electric bicycle). Almost no dirt bikes qualify.</p>
+    </div>
+    <div class="q" id="q-approval" style="display:none">
+      <h3>2. Is it type-approved — i.e. does it have a VIN and a Certificate of Conformity so DVLA can register it and issue a number plate?</h3>
+      <div class="qbtns" data-q="approval">
+        <button type="button" onclick="ans('approval','yes',this)" aria-pressed="false">Yes, type-approved</button>
+        <button type="button" onclick="ans('approval','no',this)" aria-pressed="false">No / not sure</button>
+      </div>
+      <p class="hint">Off-the-shelf Sur-Ron, Talaria, Stark and MX bikes are <em>not</em> type-approved.</p>
+    </div>
+    <div class="q" id="q-power" style="display:none">
+      <h3>3. What is its continuous power and top speed?</h3>
+      <div class="qbtns" data-q="power">
+        <button type="button" onclick="ans('power','moped',this)" aria-pressed="false">Up to 4kW &amp; 28mph</button>
+        <button type="button" onclick="ans('power','moto',this)" aria-pressed="false">More than that</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="result" class="result" role="status" aria-live="polite"></div>
+
+  <section class="info">
+    <h2>How UK law treats electric dirt bikes</h2>
+    <p>In the UK there are only two outcomes for an electric two-wheeler: it's either an <strong>EAPC</strong> (treated as a bicycle) or a <strong>motor vehicle</strong> (treated like any moped or motorcycle). There is no special "electric" exemption for dirt bikes.</p>
+    <h3>EAPC — bicycle rules</h3>
+    <p>Pedals that drive the bike, a motor of 250W or less, and power that cuts out at 15.5mph. No licence, tax, registration or insurance. Virtually no electric dirt bike meets this — they have no pedals and far more power.</p>
+    <h3>Off-road only</h3>
+    <p>A powerful eMoto with no type approval — a stock Sur-Ron, Talaria, Stark Varg or MX bike — can only be ridden on <strong>private land with the landowner's permission</strong>. Roads, pavements, bridleways, byways and parks are all off-limits.</p>
+    <h3>Road-legal (type-approved)</h3>
+    <p>A type-approved model such as the Light Bee L1e or Zero XB can be registered, plated, taxed and insured. As a moped-class L1e machine you'll need at least a <strong>CBT</strong> (or full AM/A1 licence), insurance, a number plate and a helmet.</p>
+    <div class="disclaimer">
+      This checker gives general guidance based on UK rules current in 2026 and is not legal advice. Always confirm a specific bike's status with the manufacturer's Certificate of Conformity and with <a href="https://www.gov.uk/vehicle-approval" rel="nofollow">DVLA / GOV.UK</a> before riding on the road.
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <a href="/">Home</a>
+      <a href="/road-legal-electric-bikes">Road-Legal Bikes</a>
+      <a href="/guides">Guides</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div>© VoltTrail — UK electric off-road specialists</div>
+  </div>
+</footer>
+
+<script src="/js/webmcp.js" defer></script>
+<script>
+(function(){
+  var state={pedals:null,approval:null,power:null};
+
+  window.setMode=function(m){
+    var bike=m==='bike';
+    document.getElementById('mode-bike').style.display=bike?'':'none';
+    document.getElementById('mode-any').style.display=bike?'none':'';
+    document.getElementById('tab-bike').classList.toggle('active',bike);
+    document.getElementById('tab-any').classList.toggle('active',!bike);
+    document.getElementById('tab-bike').setAttribute('aria-selected',bike);
+    document.getElementById('tab-any').setAttribute('aria-selected',!bike);
+    hide();
+    if(!bike){state={pedals:null,approval:null,power:null};resetBtns();document.getElementById('q-approval').style.display='none';document.getElementById('q-power').style.display='none';}
+  };
+
+  function hide(){var r=document.getElementById('result');r.className='result';r.innerHTML='';}
+  function resetBtns(){document.querySelectorAll('.qbtns button').forEach(function(b){b.setAttribute('aria-pressed','false');});}
+
+  var RESULTS={
+    legal:{cls:'legal',tag:'Road legal — with the right paperwork',h:'Yes — road legal',reqs:[
+      'A valid licence: at minimum a CBT (or full AM / A1 category)',
+      'DVLA registration and a number plate',
+      'Insurance (third-party minimum)',
+      'Vehicle tax (may be £0 but you must still register)',
+      'An approved motorcycle helmet'
+    ],cta:{href:'/road-legal-electric-bikes',label:'See road-legal bikes'}},
+    offroad:{cls:'offroad',tag:'Off-road / private land only',h:'Not road legal',reqs:[
+      'Legal only on private land with the landowner’s permission',
+      'Not allowed on roads, pavements, bridleways, byways or parks',
+      'No registration or plate is available (no type approval)',
+      'Riding it on public land is an offence, even though it’s electric'
+    ],cta:{href:'/electric-dirt-bikes',label:'Browse off-road bikes'}},
+    eapc:{cls:'eapc',tag:'EAPC — treated as a bicycle',h:'Legal as an e-bike',reqs:[
+      'No licence, registration, tax or insurance required',
+      'Rider must be 14 or over',
+      'Not allowed on pavements; use roads and cycle paths',
+      'A helmet is strongly recommended (not legally required)'
+    ],cta:{href:'/',label:'Shop VoltTrail'}}
+  };
+
+  function show(key){
+    var d=RESULTS[key],r=document.getElementById('result');
+    var reqs=d.reqs.map(function(x){return '<li>'+x+'</li>'}).join('');
+    r.className='result show '+d.cls;
+    r.innerHTML='<div class="tag">'+d.tag+'</div><h2>'+d.h+'</h2>'+
+      '<ul class="reqs">'+reqs+'</ul>'+
+      '<div class="ctarow"><a class="btn" href="'+d.cta.href+'">'+d.cta.label+'</a>'+
+      '<a class="btn ghost" href="/blog/road-legal-surron-guide-uk">Read the full guide</a></div>';
+    r.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+
+  window.checkBike=function(){
+    var v=document.getElementById('bikeSel').value;
+    if(!v){hide();return;}
+    show(v==='l1e'?'legal':v==='eapc'?'eapc':'offroad');
+  };
+
+  window.ans=function(q,val,btn){
+    state[q]=val;
+    var group=btn.parentNode;
+    group.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed','false');});
+    btn.setAttribute('aria-pressed','true');
+    // EAPC short-circuit
+    if(q==='pedals'){
+      if(val==='yes'){document.getElementById('q-approval').style.display='none';document.getElementById('q-power').style.display='none';show('eapc');return;}
+      document.getElementById('q-approval').style.display='';hide();
+    }
+    if(q==='approval'){
+      if(val==='no'){document.getElementById('q-power').style.display='none';show('offroad');return;}
+      document.getElementById('q-power').style.display='';hide();
+    }
+    if(q==='power'){show('legal');}
+  };
+})();
+</script>
+</body>
+</html>
