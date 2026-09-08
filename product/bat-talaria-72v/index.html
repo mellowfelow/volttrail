@@ -7,10 +7,10 @@
      EASIER ALTERNATIVE: in BWMT, choose "Import from Google Search Console" and you won't need this tag.
 <meta name="msvalidate.01" content="REPLACE_WITH_YOUR_BING_VERIFICATION_CODE"> -->
 <meta name="keywords" content="electric dirt bike, electric dirt bikes UK, electric dirt bike for adults, kids electric dirt bike, road legal electric dirt bike, Sur-Ron, Talaria, Stark Varg, electric quad bike">
-<title>Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – Vol…</title>
-<meta name="description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. Talaria&#39;s most powerful battery with advanced BMS…">
-<meta property="og:title" content="Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – Vol…">
-<meta property="og:description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. Talaria&#39;s most powerful battery with advanced BMS…">
+<title>Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – VoltTrail</title>
+<meta name="description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. &#163;1,099. Free UK delivery.">
+<meta property="og:title" content="Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – VoltTrail">
+<meta property="og:description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. &#163;1,099. Free UK delivery.">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://volttrail.org/product/bat-talaria-72v/">
 <link rel="canonical" href="https://volttrail.org/product/bat-talaria-72v/">
@@ -43,8 +43,8 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@volttrailuk">
-<meta name="twitter:title" content="Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – Vol…">
-<meta name="twitter:description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. Talaria&#39;s most powerful battery with advanced BMS…">
+<meta name="twitter:title" content="Talaria 72V 40Ah Replacement Battery (MX5 / Komodo) – VoltTrail">
+<meta name="twitter:description" content="Genuine replacement 72V 40Ah lithium-ion battery pack (2,880Wh) for the Talaria Sting MX5 Pro and Komodo. &#163;1,099. Free UK delivery.">
 <meta name="twitter:image" content="https://volttrail.org/og-image.jpg">
 
 <!-- Additional SEO -->
@@ -3726,6 +3726,7 @@ function _injectProductSchema(item) {
   b.textContent = JSON.stringify(crumbData);
   document.head.appendChild(b);
 }
+function _metaTrim(s, max) { s = String(s).trim(); if (s.length <= max) return s; var cut = s.slice(0, max); var p = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? ')); if (p > max * 0.5) return s.slice(0, p + 1); var sp = cut.lastIndexOf(' '); return s.slice(0, sp > 0 ? sp : max).replace(/[\s,;:\u2013-]+$/, '') + '\u2026'; }
 function renderProductPage(id) {
   const item = findProduct(id);
   const body = document.getElementById('product-detail-body');
@@ -3733,9 +3734,9 @@ function renderProductPage(id) {
   if(!item || !body) { showPage('404'); return; }
   const type = productType(item);
   // SEO: title, meta, canonical
-  const seoTitle = item.name + ' | ' + item.brand + ' \u2013 VoltTrail UK';
-  const seoDesc = (item.desc ? item.desc + ' ' : 'Buy the ' + item.name + ' at VoltTrail. ')
-    + (item.price!=='Enquire' ? item.price + '. ' : '') + 'Free UK delivery, finance available.';
+  const seoTitle = (item.name.toLowerCase().indexOf(item.brand.toLowerCase()) > -1 ? item.name : item.brand + ' ' + item.name) + ' \u2013 VoltTrail';
+  const _dtail = (item.price && item.price !== 'Enquire' ? ' ' + item.price + '.' : '') + ' Free UK delivery.';
+  const seoDesc = _metaTrim(item.desc || ('Buy the ' + item.name + ' at VoltTrail'), 158 - _dtail.length) + _dtail;
   document.title = seoTitle;
   _setMeta('description', seoDesc);
   _setMeta('og:title', seoTitle, 'property');

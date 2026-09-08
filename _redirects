@@ -18,14 +18,18 @@ https://www.volttrail.org/*  https://volttrail.org/:splat  301!
 /.well-known/ucp                        /well-known/ucp.json                        200
 /auth.md                                /auth.txt                                   200
 
-# Legacy product URLs -> canonical product pages
-/electric-dirt-bikes/surron-ultra-bee-mx-2025   /product/ultra-bee         301
-/electric-dirt-bikes/talaria-sting-r-off-road   /product/talaria-sting-r   301
-/electric-dirt-bikes/stark-varg-mx-1-2          /product/stark-mx          301
+# The /product/ directory has no index page — send it to the dirt bike shop.
+/product                                        /electric-dirt-bikes/      301
+/product/                                       /electric-dirt-bikes/      301
+
+# Legacy product URLs -> canonical product pages (trailing slash = how CF serves them)
+/electric-dirt-bikes/surron-ultra-bee-mx-2025   /product/ultra-bee/        301
+/electric-dirt-bikes/talaria-sting-r-off-road   /product/talaria-sting-r/  301
+/electric-dirt-bikes/stark-varg-mx-1-2          /product/stark-mx/         301
 
 # Legacy short URLs
-/faq        /guides                 301
-/legal      /guides                 301
-/privacy    /privacy-policy         301
-/terms      /terms-and-conditions   301
-/cookies    /cookie-policy          301
+/faq        /guides/                 301
+/legal      /guides/                 301
+/privacy    /privacy-policy/         301
+/terms      /terms-and-conditions/   301
+/cookies    /cookie-policy/          301

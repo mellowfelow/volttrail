@@ -7,9 +7,9 @@ Disallow: /checkout
 Disallow: /order-confirmation
 Disallow: /search
 Disallow: /newsletter
+Disallow: /cdn-cgi/
 Disallow: /_redirects
 Disallow: /_headers
-Crawl-delay: 2
 
 # AI assistants & answer engines — explicitly allowed (AI visibility)
 User-agent: GPTBot

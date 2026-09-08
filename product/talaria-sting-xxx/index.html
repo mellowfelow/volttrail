@@ -8,10 +8,10 @@
      EASIER ALTERNATIVE: in BWMT, choose "Import from Google Search Console" and you won't need this tag.
 <meta name="msvalidate.01" content="REPLACE_WITH_YOUR_BING_VERIFICATION_CODE"> -->
 <meta name="keywords" content="electric dirt bike, electric dirt bikes UK, electric dirt bike for adults, kids electric dirt bike, road legal electric dirt bike, Sur-Ron, Talaria, Stark Varg, electric quad bike">
-<title>Sting XXX | Talaria – VoltTrail UK</title>
-<meta name="description" content="The Talaria Sting XXX is the crossover model — combining the Sting's proven frame with a unique battery configuration designed for maximum aftermarket upgrade potential. Popular with performance-oriented riders. Also known as the Talaria Triple X or Talaria XXX Pro — the Sting XXX is the upgrade-focused model in the Talaria range. £3,299. Free UK delivery, finance available.">
-<meta property="og:title" content="Sting XXX | Talaria – VoltTrail UK">
-<meta property="og:description" content="The Talaria Sting XXX is the crossover model — combining the Sting's proven frame with a unique battery configuration designed for maximum aftermarket upgrade potential. Popular with performance-oriented riders. Also known as the Talaria Triple X or Talaria XXX Pro — the Sting XXX is the upgrade-focused model in the Talaria range. £3,299. Free UK delivery, finance available.">
+<title>Talaria Sting XXX – VoltTrail</title>
+<meta name="description" content="The Talaria Sting XXX is the crossover model — combining the Sting&#39;s proven frame with a unique battery configuration designed for… &#163;3,299. Free UK delivery.">
+<meta property="og:title" content="Talaria Sting XXX – VoltTrail">
+<meta property="og:description" content="The Talaria Sting XXX is the crossover model — combining the Sting&#39;s proven frame with a unique battery configuration designed for… &#163;3,299. Free UK delivery.">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://volttrail.org/product/talaria-sting-xxx/">
 <link rel="canonical" href="https://volttrail.org/product/talaria-sting-xxx/">
@@ -44,8 +44,8 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@volttrailuk">
-<meta name="twitter:title" content="Sting XXX | Talaria – VoltTrail UK">
-<meta name="twitter:description" content="The Talaria Sting XXX is the crossover model — combining the Sting's proven frame with a unique battery configuration designed for maximum aftermarket upgrade potential. Popular with performance-oriented riders. Also known as the Talaria Triple X or Talaria XXX Pro — the Sting XXX is the upgrade-focused model in the Talaria range. £3,299. Free UK delivery, finance available.">
+<meta name="twitter:title" content="Talaria Sting XXX – VoltTrail">
+<meta name="twitter:description" content="The Talaria Sting XXX is the crossover model — combining the Sting&#39;s proven frame with a unique battery configuration designed for… &#163;3,299. Free UK delivery.">
 <meta name="twitter:image" content="https://volttrail.org/og-image.jpg">
 
 <!-- Additional SEO -->
@@ -10301,6 +10301,7 @@ function _injectProductSchema(item) {
   b.textContent = JSON.stringify(crumbData);
   document.head.appendChild(b);
 }
+function _metaTrim(s, max) { s = String(s).trim(); if (s.length <= max) return s; var cut = s.slice(0, max); var p = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? ')); if (p > max * 0.5) return s.slice(0, p + 1); var sp = cut.lastIndexOf(' '); return s.slice(0, sp > 0 ? sp : max).replace(/[\s,;:\u2013-]+$/, '') + '\u2026'; }
 function renderProductPage(id) {
   const item = findProduct(id);
   const body = document.getElementById('product-detail-body');
@@ -10308,9 +10309,9 @@ function renderProductPage(id) {
   if(!item || !body) { showPage('404'); return; }
   const type = productType(item);
   // SEO: title, meta, canonical
-  const seoTitle = item.name + ' | ' + item.brand + ' \u2013 VoltTrail UK';
-  const seoDesc = (item.desc ? item.desc + ' ' : 'Buy the ' + item.name + ' at VoltTrail. ')
-    + (item.price!=='Enquire' ? item.price + '. ' : '') + 'Free UK delivery, finance available.';
+  const seoTitle = (item.name.toLowerCase().indexOf(item.brand.toLowerCase()) > -1 ? item.name : item.brand + ' ' + item.name) + ' \u2013 VoltTrail';
+  const _dtail = (item.price && item.price !== 'Enquire' ? ' ' + item.price + '.' : '') + ' Free UK delivery.';
+  const seoDesc = _metaTrim(item.desc || ('Buy the ' + item.name + ' at VoltTrail'), 158 - _dtail.length) + _dtail;
   document.title = seoTitle;
   _setMeta('description', seoDesc);
   _setMeta('og:title', seoTitle, 'property');
