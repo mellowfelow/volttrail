@@ -4348,7 +4348,7 @@ function _injectBlogSchema(post) {
   ['blog-jsonld','blog-faq-jsonld','blog-breadcrumb-jsonld'].forEach(id => {
     const o = document.getElementById(id); if(o) o.remove();
   });
-  const url = SITE_ORIGIN + '/blog/' + post.slug;
+  const url = SITE_ORIGIN + '/blog/' + post.slug + '/';
   // Article schema
   const article = {
     "@context": "https://schema.org",
@@ -4393,7 +4393,7 @@ function _injectBlogSchema(post) {
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":"Blog","item":SITE_ORIGIN+'/blog'},
+      {"@type":"ListItem","position":2,"name":"Blog","item":SITE_ORIGIN+'/blog/'},
       {"@type":"ListItem","position":3,"name":post.title,"item":url}
     ]
   };
@@ -4411,7 +4411,7 @@ function renderBlogPost(slug) {
   _setMeta('og:title', post.title, 'property');
   _setMeta('og:description', post.desc, 'property');
   _setMeta('og:type', 'article', 'property');
-  _setMeta('og:url', SITE_ORIGIN + '/blog/' + post.slug, 'property');
+  _setMeta('og:url', SITE_ORIGIN + '/blog/' + post.slug + '/', 'property');
   _setMeta('og:image', SITE_ORIGIN + '/og-image.jpg', 'property');
   _setMeta('twitter:card', 'summary_large_image');
   _setMeta('twitter:title', post.title);
@@ -4420,7 +4420,7 @@ function renderBlogPost(slug) {
   _setMeta('article:published_time', post.date, 'property');
   _setMeta('keywords', post.kw);
   let canon = document.head.querySelector('link[rel="canonical"]');
-  if(canon) canon.setAttribute('href', SITE_ORIGIN + '/blog/' + post.slug);
+  if(canon) canon.setAttribute('href', SITE_ORIGIN + '/blog/' + post.slug + '/');
   _setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1');
   _injectBlogSchema(post);
   // Breadcrumb
@@ -4474,7 +4474,7 @@ function _injectProductSchema(item) {
   const num = priceToNumber(item.price);
   const type = productType(item);
   const catName = type==='quad' ? 'Electric Quad Bike' : (type==='part' ? 'Parts & Accessories' : 'Electric Dirt Bike');
-  const url = SITE_ORIGIN + '/product/' + item.id;
+  const url = SITE_ORIGIN + '/product/' + item.id + '/';
   const imgUrl = item.img ? SITE_ORIGIN + item.img : SITE_ORIGIN + '/og-image.jpg';
   // Product schema — fully Merchant Center-ready
   const data = {
@@ -4522,7 +4522,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath},
+      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };
@@ -4547,7 +4547,7 @@ function renderProductPage(id) {
   _setMeta('og:title', seoTitle, 'property');
   _setMeta('og:description', seoDesc, 'property');
   _setMeta('og:type', 'product', 'property');
-  _setMeta('og:url', SITE_ORIGIN + '/product/' + item.id, 'property');
+  _setMeta('og:url', SITE_ORIGIN + '/product/' + item.id + '/', 'property');
   _setMeta('og:image', item.img ? SITE_ORIGIN + item.img : SITE_ORIGIN + '/og-image.jpg', 'property');
   _setMeta('twitter:card', 'summary_large_image');
   _setMeta('twitter:title', seoTitle);
@@ -4558,7 +4558,7 @@ function renderProductPage(id) {
     _setMeta('product:price:currency', 'GBP', 'property');
   }
   let canon = document.head.querySelector('link[rel="canonical"]');
-  if(canon) canon.setAttribute('href', SITE_ORIGIN + '/product/' + item.id);
+  if(canon) canon.setAttribute('href', SITE_ORIGIN + '/product/' + item.id + '/');
   _setMeta('robots','index, follow, max-image-preview:large, max-snippet:-1');
   _injectProductSchema(item);
   // Update the static H1 placeholder (promoted by early bootstrap) with the real product name
@@ -4848,7 +4848,7 @@ function _applySEO(id) {
     canon.setAttribute('rel', 'canonical');
     document.head.appendChild(canon);
   }
-  const canonUrl = SITE_ORIGIN + r.path;
+  const canonUrl = SITE_ORIGIN + (r.path === '/' ? '/' : r.path.replace(/\/+$/, '') + '/');
   canon.setAttribute('href', canonUrl);
   _setMeta('og:url', canonUrl, 'property');
   // robots: noindex for utility pages, index for everything else
