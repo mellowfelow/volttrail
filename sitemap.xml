@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://volttrail.org/blog/</loc>
     <lastmod>2026-09-08</lastmod>
@@ -269,402 +269,670 @@
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ultra-bee.jpg</image:loc>
+      <image:title>Ultra Bee MX 2025</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/lbx/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-lbx.jpg</image:loc>
+      <image:title>Light Bee X (LBX)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/lbx-road/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-lbx-road.jpg</image:loc>
+      <image:title>Light Bee L1e – Road Legal</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/storm-bee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-storm-bee.jpg</image:loc>
+      <image:title>Storm Bee</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/hyper-bee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-hyper-bee.jpg</image:loc>
+      <image:title>Hyper Bee 2025</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/talaria-sting-r/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-sting-r.jpg</image:loc>
+      <image:title>Sting R MX4 – Off Road</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/talaria-sting-road/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-sting-road.jpg</image:loc>
+      <image:title>Sting L1e – Road Legal</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/talaria-mx5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-mx5.jpg</image:loc>
+      <image:title>Sting MX5 Pro – 72V</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/talaria-x3/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-x3.jpg</image:loc>
+      <image:title>X3 (XXX)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/talaria-komodo/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-komodo.jpg</image:loc>
+      <image:title>Komodo TL6000</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/stark-mx/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-stark-mx.jpg</image:loc>
+      <image:title>Varg MX 1.2</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/stark-ex/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-stark-ex.jpg</image:loc>
+      <image:title>Varg EX – Road Legal</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ktm-sxe5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ktm-sxe5.jpg</image:loc>
+      <image:title>SX-E 5</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ktm-sxe3/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ktm-sxe3.jpg</image:loc>
+      <image:title>SX-E 3</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ktm-sxe2/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ktm-sxe2.jpg</image:loc>
+      <image:title>SX-E 2</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/eride-ss/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-eride-ss.jpg</image:loc>
+      <image:title>SS 2.0 (19in) – 72V 12kW</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/eride-s/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-eride-s.jpg</image:loc>
+      <image:title>S (17in) – 72V 6kW</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/rfn-ares-rally/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-rfn-ares-rally.jpg</image:loc>
+      <image:title>Ares Rally</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/rfn-ares-rally-pro/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-rfn-ares-rally-pro.jpg</image:loc>
+      <image:title>Ares Rally Pro</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/rfn-ares-rs/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-rfn-ares-rs.jpg</image:loc>
+      <image:title>Ares RS Endurance (L1e)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/rfn-warrior-sxe5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-rfn-warrior-sxe5.jpg</image:loc>
+      <image:title>Warrior Youth SX-E5</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/rfn-warrior-sxe8/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-rfn-warrior-sxe8.jpg</image:loc>
+      <image:title>Warrior Youth SX-E8</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/revvi-12/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-revvi-12.jpg</image:loc>
+      <image:title>Revvi 12in Kids Electric Balance Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/revvi-16/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-revvi-16.jpg</image:loc>
+      <image:title>Revvi 16in Kids Electric Balance Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/revvi-16-plus/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-revvi-16-plus.jpg</image:loc>
+      <image:title>Revvi 16in Plus Kids Electric Balance Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/revvi-18/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-revvi-18.jpg</image:loc>
+      <image:title>Revvi 18in Kids Electric Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/revvi-20/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-revvi-20.jpg</image:loc>
+      <image:title>Revvi 20in Kids Electric Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-mx350/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-mx350.jpg</image:loc>
+      <image:title>MX350 350W Kids Electric Dirt Bike</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-790/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-790.jpg</image:loc>
+      <image:title>MXR 790W – Ages 6–10</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-1400/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-1400.jpg</image:loc>
+      <image:title>MXR 1400W – Ages 10–14</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-1800/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-1800.jpg</image:loc>
+      <image:title>MXR 1800W 2025</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/razor-mx350/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-razor-mx350.jpg</image:loc>
+      <image:title>MX350 Dirt Rocket</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/razor-mx400/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-razor-mx400.jpg</image:loc>
+      <image:title>MX400 Dirt Rocket</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/segway-snarler/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-segway-snarler.jpg</image:loc>
+      <image:title>Snarler ATV6 Electric</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ecorider-explorer-gt/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ecorider-explorer-gt.jpg</image:loc>
+      <image:title>Explorer GT Electric Quad</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ecorider-explorer/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ecorider-explorer.jpg</image:loc>
+      <image:title>Explorer 2100W Electric Quad</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/ecorider-shredder/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ecorider-shredder.jpg</image:loc>
+      <image:title>Shredder Electric Sport Quad</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/segway-kids-quad/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-segway-kids-quad.jpg</image:loc>
+      <image:title>Segway Junior Electric Quad</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-quad-500/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-quad-500.jpg</image:loc>
+      <image:title>Kids Quad 500W – Ages 6–12</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-quad-1000/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-quad-1000.jpg</image:loc>
+      <image:title>Kids Quad 1000W – Ages 10+</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/funbikes-quad-1500/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-funbikes-quad-1500.jpg</image:loc>
+      <image:title>Kids Quad 1500W – Teens</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/razor-quad/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-razor-quad.jpg</image:loc>
+      <image:title>Razor Dirt Quad – Kids Electric ATV</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-surron-lightbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-surron-lightbee.jpg</image:loc>
+      <image:title>Sur-Ron Light Bee 60V Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-surron-lightbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-surron-lightbee.jpg</image:loc>
+      <image:title>Sur-Ron Light Bee 60V Charger (10A)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-surron-stormbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-surron-stormbee.jpg</image:loc>
+      <image:title>Sur-Ron Storm Bee 104V Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-surron-stormbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-surron-stormbee.jpg</image:loc>
+      <image:title>Sur-Ron Storm Bee 104V Fast Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-surron-ultrabee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-surron-ultrabee.jpg</image:loc>
+      <image:title>Sur-Ron Ultra Bee 74V Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-surron-ultrabee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-surron-ultrabee.jpg</image:loc>
+      <image:title>Sur-Ron Ultra Bee 74V Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-surron-hyperbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-surron-hyperbee.jpg</image:loc>
+      <image:title>Sur-Ron Hyper Bee 58V Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-surron-hyperbee/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-surron-hyperbee.jpg</image:loc>
+      <image:title>Sur-Ron Hyper Bee 58V Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-talaria-stingr/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-talaria-stingr.jpg</image:loc>
+      <image:title>Talaria Sting R 60V 45Ah Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-talaria-sting38/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-talaria-sting38.jpg</image:loc>
+      <image:title>Talaria Sting 60V 38Ah Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-talaria-60v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-talaria-60v.jpg</image:loc>
+      <image:title>Talaria 60V OEM Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-talaria-72v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-talaria-72v.jpg</image:loc>
+      <image:title>Talaria 72V 40Ah Battery (MX5 / Komodo)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-talaria-72v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-talaria-72v.jpg</image:loc>
+      <image:title>Talaria 72V Charger (MX5 / Komodo)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-stark-varg/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-stark-varg.jpg</image:loc>
+      <image:title>Stark Varg 6.5kWh Replacement Battery Pack</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-stark-varg/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-stark-varg.jpg</image:loc>
+      <image:title>Stark Varg 3.3kW Fast Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-stark-110v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-stark-110v.jpg</image:loc>
+      <image:title>Stark Varg 110V Charging Adapter</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-ktm-sxe5/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ktm-sxe5.jpg</image:loc>
+      <image:title>KTM PowerPack 907Wh Battery (SX-E 5)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-ktm-sxe3/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ktm-sxe3.jpg</image:loc>
+      <image:title>KTM PowerPack 648Wh Battery (SX-E 3)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-ktm/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-ktm.jpg</image:loc>
+      <image:title>KTM 900W Charger (SX-E Range)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-eride-72v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-eride-72v.jpg</image:loc>
+      <image:title>E Ride Pro 72V Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-eride-72v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-eride-72v.jpg</image:loc>
+      <image:title>E Ride Pro 72V Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-rfn-ares/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-rfn-ares.jpg</image:loc>
+      <image:title>RFN Ares Replacement Battery</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-rfn/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-rfn.jpg</image:loc>
+      <image:title>RFN OEM Charger</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-revvi-3618/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-revvi-3618.jpg</image:loc>
+      <image:title>Revvi 36V 5.0Ah Battery (18in)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chg-revvi-36v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-revvi-36v.jpg</image:loc>
+      <image:title>Revvi 36V 3.0A Charger (18in / 20in)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-revvi-small/</loc>
@@ -677,132 +945,220 @@
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-razor-24v.jpg</image:loc>
+      <image:title>Razor 24V 2A Charger (MX350 / MX400)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/bat-razor-24v/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-razor-24v.jpg</image:loc>
+      <image:title>Razor 24V Battery Set (MX350 / MX400)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/helmet-mx/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-helmet-mx.jpg</image:loc>
+      <image:title>Off-Road MX Helmet – Adult</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/helmet-kids/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-helmet-kids.jpg</image:loc>
+      <image:title>Kids Off-Road MX Helmet</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/body-armour/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-body-armour.jpg</image:loc>
+      <image:title>Body Armour Set – Chest &amp; Back</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/mx-goggles/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-mx-goggles.jpg</image:loc>
+      <image:title>MX Goggles – Anti-Fog</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/mx-gloves/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-mx-gloves.jpg</image:loc>
+      <image:title>Off-Road Riding Gloves</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/mx-boots/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-mx-boots.jpg</image:loc>
+      <image:title>Motocross Boots – Adult</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/chain-sprocket/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-chain-sprocket.jpg</image:loc>
+      <image:title>Chain &amp; Sprocket Kit</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/brake-pads/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-brake-pads.jpg</image:loc>
+      <image:title>Performance Brake Pads (Pair)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/offroad-tyre/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-offroad-tyre.jpg</image:loc>
+      <image:title>Off-Road Knobbly Tyre</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/front-sprocket/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-front-sprocket.jpg</image:loc>
+      <image:title>Upgraded Front Sprocket</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/inner-tube/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-inner-tube.jpg</image:loc>
+      <image:title>Heavy-Duty Inner Tube (19in / 18in)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/handlebar-kit/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-handlebar-kit.jpg</image:loc>
+      <image:title>Handlebar &amp; Grips Upgrade Kit</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/kickstand/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-kickstand.jpg</image:loc>
+      <image:title>Folding Side Stand / Kickstand</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/led-headlight/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-led-headlight.jpg</image:loc>
+      <image:title>LED Headlight Upgrade</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/cooling-fan/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-cooling-fan.jpg</image:loc>
+      <image:title>Motor / Controller Cooling Fan Kit</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/shinko-241/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-shinko-241.jpg</image:loc>
+      <image:title>Shinko 241 Dual-Sport Tyre (19in)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/front-mx-tyre/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-front-mx-tyre.jpg</image:loc>
+      <image:title>Front Knobbly MX Tyre (70/100-19)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/tyre-tubes-pair/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-tyre-tubes-pair.jpg</image:loc>
+      <image:title>Heavy-Duty Tyre Tubes (Pair)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/wheel-rear/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-wheel-rear.jpg</image:loc>
+      <image:title>Complete Rear Wheel (19in, Tyre Fitted)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/product/wheel-front/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-wheel-front.jpg</image:loc>
+      <image:title>Complete Front Wheel (19in, Tyre Fitted)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://volttrail.org/blog/are-sur-rons-legal-uk/</loc>
@@ -963,71 +1319,396 @@
   <url><loc>https://volttrail.org/brands/gasgas/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/brands/stacyc/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/brands/zero/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://volttrail.org/product/ktm-freeride-e/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/zero-xb/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/zero-xe/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/stark-sm/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/talaria-dragon/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/talaria-sting-mx3/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/talaria-sting-xxx/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/talaria-x3-pro/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/gasgas-mce2/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/gasgas-mce5/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/eride-sr/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/razor-mx125/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/razor-mx650/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/segway-xaber/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/segway-xafari/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/segway-xyber/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/stacyc-12/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/stacyc-16/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/stacyc-18/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/stacyc-20/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-ewatt-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-ewatt-72v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-dhs/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-chi-60max/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-chi-60tour/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-chi-x60/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-lbx-chi-x72/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-ubee-ewatt-80v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-ubee-ebmx-81v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-tal-ewatt-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-tal-ewatt-72v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-tal-ebmx-74v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-tal-72v-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-tal-xxx-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-eride-ss-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-eride-sr-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bat-eride-s-bundle/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chg-60v-std/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chg-72v-std/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chg-ewatt-fast/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chg-74v-xxx/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/elbow-pads/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/knee-shin-guards/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/neck-brace/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chest-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/mx-jersey-adult/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/mx-jersey-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/goggle-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/gloves-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/boots-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/helmet-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/waterproof-cover/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/paddock-stand/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/loading-ramp/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/lipo-bag/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/torque-wrench/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/tool-kit/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/hydration-pack/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/tie-down-straps/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/bike-wash/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/chain-lube/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/puncture-kit/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/battery-terminal/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/gloves-airmatic/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://volttrail.org/product/centre-stand/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://volttrail.org/product/ktm-freeride-e/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ktm-freeride-e.jpg</image:loc>
+      <image:title>Freeride E 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/zero-xb/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-zero-xb.jpg</image:loc>
+      <image:title>XB 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/zero-xe/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-zero-xe.jpg</image:loc>
+      <image:title>XE 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/stark-sm/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-stark-sm.jpg</image:loc>
+      <image:title>Varg SM</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/talaria-dragon/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-dragon.jpg</image:loc>
+      <image:title>Dragon</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/talaria-sting-mx3/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-sting-mx3.jpg</image:loc>
+      <image:title>Sting MX3</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/talaria-sting-xxx/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-sting-xxx.jpg</image:loc>
+      <image:title>Sting XXX</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/talaria-x3-pro/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-talaria-x3-pro.jpg</image:loc>
+      <image:title>X3 Pro</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/gasgas-mce2/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-gasgas-mce2.jpg</image:loc>
+      <image:title>MC-E 2 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/gasgas-mce5/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-gasgas-mce5.jpg</image:loc>
+      <image:title>MC-E 5 2025</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/eride-sr/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-eride-sr.jpg</image:loc>
+      <image:title>SR (19in) – 72V 12kW</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/razor-mx125/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-razor-mx125.jpg</image:loc>
+      <image:title>MX125 Dirt Rocket</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/razor-mx650/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-razor-mx650.jpg</image:loc>
+      <image:title>MX650 Dirt Rocket</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/segway-xaber/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-segway-xaber.jpg</image:loc>
+      <image:title>Xaber 300</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/segway-xafari/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-segway-xafari.jpg</image:loc>
+      <image:title>Xafari</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/segway-xyber/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-segway-xyber.jpg</image:loc>
+      <image:title>Xyber</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/stacyc-12/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-stacyc-12.jpg</image:loc>
+      <image:title>12eDRIVE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/stacyc-16/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-stacyc-16.jpg</image:loc>
+      <image:title>16eDRIVE Brushless</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/stacyc-18/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-stacyc-18.jpg</image:loc>
+      <image:title>18eDRIVE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/stacyc-20/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-stacyc-20.jpg</image:loc>
+      <image:title>20eDRIVE</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-ewatt-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-ewatt-60v.jpg</image:loc>
+      <image:title>eWatt 60V 53Ah Long Range Battery (Sur-Ron LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-ewatt-72v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-ewatt-72v.jpg</image:loc>
+      <image:title>eWatt 72V Race Battery v5 (Sur-Ron LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-dhs/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-dhs.jpg</image:loc>
+      <image:title>DHS GT 72V 50Ah Battery (Sur-Ron LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-chi-60max/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-chi-60max.jpg</image:loc>
+      <image:title>Gladiator 60 Max 60V 60Ah – LBX</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-chi-60tour/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-chi-60tour.jpg</image:loc>
+      <image:title>Gladiator 60 Touring 60V 70Ah – LBX</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-chi-x60/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-chi-x60.jpg</image:loc>
+      <image:title>Gladiator X60 Compact 60V 51Ah (LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-lbx-chi-x72/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-lbx-chi-x72.jpg</image:loc>
+      <image:title>Gladiator X72 Compact 72V 38Ah (LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-ubee-ewatt-80v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ubee-ewatt-80v.jpg</image:loc>
+      <image:title>eWatt Ultra Bee 80V 76Ah Bundle + Lid + Charger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-ubee-ebmx-81v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ubee-ebmx-81v.jpg</image:loc>
+      <image:title>EBMX 81V Ultra Bee Pack + Lid + Charger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-tal-ewatt-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-tal-ewatt-60v.jpg</image:loc>
+      <image:title>eWatt 60V 53Ah Battery (Talaria Sting)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-tal-ewatt-72v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-tal-ewatt-72v.jpg</image:loc>
+      <image:title>eWatt 72V 42Ah Race Battery (Talaria Sting)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-tal-ebmx-74v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-tal-ebmx-74v.jpg</image:loc>
+      <image:title>EBMX 74V 44Ah Battery (Talaria XXX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-tal-72v-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-tal-72v-oem.jpg</image:loc>
+      <image:title>Talaria MX5 Pro OEM 72V 40Ah Replacement Battery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-tal-xxx-60v/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-tal-xxx-60v.jpg</image:loc>
+      <image:title>Talaria XXX OEM 60V Battery Replacement</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-eride-ss-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-eride-ss-oem.jpg</image:loc>
+      <image:title>E Ride Pro SS 72V 40Ah OEM Battery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-eride-sr-oem/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-eride-sr-oem.jpg</image:loc>
+      <image:title>E Ride Pro SR 72V 50Ah OEM Battery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-eride-s-bundle/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-eride-s-bundle.jpg</image:loc>
+      <image:title>E Ride Pro S 72V 30Ah Battery + Charger Bundle</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chg-60v-std/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-60v-std.jpg</image:loc>
+      <image:title>60V Standard Aftermarket Charger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chg-72v-std/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-72v-std.jpg</image:loc>
+      <image:title>72V Standard Aftermarket Charger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chg-ewatt-fast/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-ewatt-fast.jpg</image:loc>
+      <image:title>eWatt / EBMX / CCW Fast Charger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chg-74v-xxx/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chg-74v-xxx.jpg</image:loc>
+      <image:title>74V Charger for EBMX / eWatt XXX Battery Packs</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/elbow-pads/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-elbow-pads.jpg</image:loc>
+      <image:title>Elbow Pads – Off-Road</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/knee-shin-guards/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-knee-shin-guards.jpg</image:loc>
+      <image:title>Knee &amp; Shin Guards</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/neck-brace/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-neck-brace.jpg</image:loc>
+      <image:title>Neck Brace – Off-Road MX</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chest-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chest-youth.jpg</image:loc>
+      <image:title>Chest Protector – Youth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/mx-jersey-adult/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-mx-jersey-adult.jpg</image:loc>
+      <image:title>MX Jersey + Pants Combo – Adult</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/mx-jersey-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-mx-jersey-youth.jpg</image:loc>
+      <image:title>MX Jersey + Pants Combo – Youth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/goggle-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-goggle-youth.jpg</image:loc>
+      <image:title>MX Goggles – Youth Anti-Fog</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/gloves-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-gloves-youth.jpg</image:loc>
+      <image:title>MX Gloves – Youth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/boots-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-boots-youth.jpg</image:loc>
+      <image:title>Off-Road Boots – Youth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/helmet-youth/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-helmet-youth.jpg</image:loc>
+      <image:title>Full-Face MX Helmet – Youth</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/waterproof-cover/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-waterproof-cover.jpg</image:loc>
+      <image:title>Waterproof Bike Cover</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/paddock-stand/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-paddock-stand.jpg</image:loc>
+      <image:title>Rear Paddock Stand</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/loading-ramp/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-loading-ramp.jpg</image:loc>
+      <image:title>Aluminium Loading Ramp</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/lipo-bag/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-lipo-bag.jpg</image:loc>
+      <image:title>Fireproof LiPo Battery Storage Bag</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/torque-wrench/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-torque-wrench.jpg</image:loc>
+      <image:title>Torque Wrench (5–25Nm)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/tool-kit/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-tool-kit.jpg</image:loc>
+      <image:title>Basic Tool Kit (Hex, Torx, Spanners)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/hydration-pack/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-hydration-pack.jpg</image:loc>
+      <image:title>Hydration Pack – 2L</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/tie-down-straps/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-tie-down-straps.jpg</image:loc>
+      <image:title>Dirt Bike Tie-Down Straps (Set of 4)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bike-wash/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-bike-wash.jpg</image:loc>
+      <image:title>Bike Wash &amp; Cleaner Spray</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/chain-lube/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-chain-lube.jpg</image:loc>
+      <image:title>Chain Lube / Drivetrain Lube</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/puncture-kit/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-puncture-kit.jpg</image:loc>
+      <image:title>Puncture Repair Kit</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/battery-terminal/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-battery-terminal.jpg</image:loc>
+      <image:title>Battery Terminal Protector Spray</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/gloves-airmatic/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-gloves-airmatic.jpg</image:loc>
+      <image:title>Airmatic FA25 Off-Road Gloves</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/centre-stand/</loc><lastmod>2026-09-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-centre-stand.jpg</image:loc>
+      <image:title>Centre Stand (Sur-Ron Compatible)</image:title>
+    </image:image>
+  </url>
   <url><loc>https://volttrail.org/blog/surron-72v-battery-upgrade-guide/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/blog/road-legal-surron-guide-uk/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/blog/talaria-sting-xxx-review-uk/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
