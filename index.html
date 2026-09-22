@@ -166,20 +166,6 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
 .page { display: none; }
 .page.active { display: block; }
 
-/* ── COOKIE BANNER ── */
-#cookie-banner {
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
-  background: var(--bg4); border-top: 1px solid var(--border2);
-  padding: 16px 24px;
-  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
-}
-#cookie-banner p { font-size: 13px; color: var(--muted); flex: 1; min-width: 240px; }
-#cookie-banner .btn-accept {
-  background: var(--volt); color: #000; font-family: var(--font-c);
-  font-weight: 700; font-size: 13px; letter-spacing: 0.06em;
-  padding: 8px 20px; border-radius: var(--radius); white-space: nowrap;
-}
-#cookie-banner.hidden { display: none; }
 
 /* ── TOPBAR (rotating announcement slider) ── */
 .topbar {
@@ -2108,11 +2094,6 @@ s0.parentNode.insertBefore(s1,s0);
   </div>
 </div>
 
-<!-- ── COOKIE BANNER ── -->
-<div id="cookie-banner">
-  <p>We use cookies to improve your experience and serve relevant ads. By continuing, you agree to our <a href="/cookie-policy/" data-route="cookies" style="color:var(--volt);cursor:pointer;">Cookie Policy</a>. <a href="/privacy-policy/" data-route="privacy" style="color:var(--volt);cursor:pointer;">Privacy Policy</a></p>
-  <button class="btn-accept" onclick="document.getElementById('cookie-banner').classList.add('hidden')">Accept Cookies</button>
-</div>
 
 <!-- ── TOPBAR ── -->
 <div class="topbar" aria-label="Announcements">
@@ -6959,6 +6940,7 @@ function removeFromCart(i) {
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px">
         <h2 style="font-family:var(--font-d);color:var(--white);margin:0">Dashboard</h2>
         <div style="display:flex;gap:8px">
+          <button class="btn-outline" onclick="adminShowDashboardHub()" style="font-size:13px;padding:8px 16px">Dashboard</button>
           <button class="btn-primary" onclick="adminLoadEnquiries()" style="font-size:13px;padding:8px 16px">Enquiries</button>
           <button class="btn-outline" onclick="adminLoadOrders()" style="font-size:13px;padding:8px 16px">Orders</button>
           <button class="btn-outline" onclick="adminLogout()" style="font-size:13px;padding:8px 16px;border-color:#f44;color:#f44">Sign Out</button>
@@ -7574,15 +7556,17 @@ function whatsappCheckout() {
 var _adminPass = '';
 function _adminHeaders() { return { 'Content-Type': 'application/json', 'X-Admin-Passcode': _adminPass }; }
 function initAdmin() {
-  if(_adminPass) {
-    document.getElementById('admin-login').style.display='none';
-    document.getElementById('admin-dash').style.display='block';
-    var _orderParam = new URLSearchParams(location.search).get('order');
-    if (_orderParam) { adminLoadOrders(_orderParam); } else { adminLoadEnquiries(); }
-  } else {
+  if(_adminPass) { _adminEnterDash(); }
+  else {
     document.getElementById('admin-login').style.display='';
     document.getElementById('admin-dash').style.display='none';
   }
+}
+function _adminEnterDash() {
+  document.getElementById('admin-login').style.display='none';
+  document.getElementById('admin-dash').style.display='block';
+  var _orderParam = new URLSearchParams(location.search).get('order');
+  if (_orderParam) { adminLoadOrders(_orderParam); } else { adminShowDashboardHub(); }
 }
 function adminLogin() {
   var p = document.getElementById('admin-pass').value.trim();
@@ -7591,11 +7575,42 @@ function adminLogin() {
   fetch('/api/admin/verify', { method:'POST', headers:{ 'Content-Type':'application/json','X-Admin-Passcode':p } })
     .then(function(r){ return r.json(); })
     .then(function(d){
-      if(d.success) { document.getElementById('admin-login').style.display='none'; document.getElementById('admin-dash').style.display='block'; adminLoadEnquiries(); }
+      if(d.success) { _adminEnterDash(); }
       else { _adminPass=''; var e=document.getElementById('admin-err'); e.textContent='Invalid passcode'; e.style.display='block'; }
     }).catch(function(){ _adminPass=''; var e=document.getElementById('admin-err'); e.textContent='Connection error'; e.style.display='block'; });
 }
 function adminLogout() { _adminPass=''; initAdmin(); document.getElementById('admin-pass').value=''; }
+
+function adminShowDashboardHub() {
+  var el = document.getElementById('admin-content');
+  el.innerHTML = '<p style="color:var(--muted)">Loading dashboard…</p>';
+  Promise.all([
+    fetch('/api/admin/enquiries', { headers:_adminHeaders() }).then(function(r){ return r.json(); }).catch(function(){ return { enquiries: [] }; }),
+    fetch('/api/admin/orders', { headers:_adminHeaders() }).then(function(r){ return r.json(); }).catch(function(){ return { orders: [] }; }),
+  ]).then(function(results) {
+    var enquiries = (results[0] && results[0].enquiries) || [];
+    var orders = (results[1] && results[1].orders) || [];
+    var newEnq = enquiries.filter(function(e){ return e.status !== 'replied'; }).length;
+    var pendingOrd = orders.filter(function(o){ return o.status !== 'payment-sent'; }).length;
+    var cardStyle = 'background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:32px 24px;cursor:pointer;transition:border-color 0.15s;text-align:center;';
+    el.innerHTML =
+      '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:20px">DASHBOARD</h3>' +
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">' +
+        '<div style="' + cardStyle + '" onclick="adminLoadEnquiries()" onmouseover="this.style.borderColor=\'rgba(170,255,0,0.3)\'" onmouseout="this.style.borderColor=\'var(--border)\'">' +
+          '<div style="font-size:32px;margin-bottom:10px">&#128172;</div>' +
+          '<div style="font-family:var(--font-d);font-size:32px;font-weight:800;color:var(--white);margin-bottom:4px">' + enquiries.length + '</div>' +
+          '<div style="font-family:var(--font-c);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Enquiries</div>' +
+          (newEnq ? '<div style="margin-top:12px;display:inline-block;font-family:var(--font-c);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">' + newEnq + ' new</div>' : '') +
+        '</div>' +
+        '<div style="' + cardStyle + '" onclick="adminLoadOrders()" onmouseover="this.style.borderColor=\'rgba(170,255,0,0.3)\'" onmouseout="this.style.borderColor=\'var(--border)\'">' +
+          '<div style="font-size:32px;margin-bottom:10px">&#128230;</div>' +
+          '<div style="font-family:var(--font-d);font-size:32px;font-weight:800;color:var(--white);margin-bottom:4px">' + orders.length + '</div>' +
+          '<div style="font-family:var(--font-c);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Orders</div>' +
+          (pendingOrd ? '<div style="margin-top:12px;display:inline-block;font-family:var(--font-c);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">' + pendingOrd + ' pending</div>' : '') +
+        '</div>' +
+      '</div>';
+  }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load dashboard: '+err.message+'</p>'; });
+}
 
 // ── SHARED HELPERS ──
 var _adminEnqMap = {};
@@ -7890,7 +7905,7 @@ function adminLoadEnquiries() {
     d.enquiries.forEach(function(eq){ _adminEnqMap[eq.id] = eq; });
     el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ENQUIRIES (' + d.enquiries.length + ')</h3>' +
       d.enquiries.map(function(eq){
-        var eid = JSON.stringify(eq.id);
+        var eid = _esc(JSON.stringify(eq.id));
         var statusBadge = eq.status === 'replied'
           ? '<span style="font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:rgba(76,175,80,0.15);color:#4caf50;border:1px solid rgba(76,175,80,0.3)">Replied</span>'
           : '<span style="font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">New</span>';
@@ -7916,6 +7931,7 @@ function adminShowReply(eqId) {
   var IS = 'width:100%;background:#1a1e1a;border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--white);box-sizing:border-box;';
   var SS = 'background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;';
   var eid = JSON.stringify(eqId);
+  var eidAttr = _esc(eid);
   var out = '<button class="btn-outline" style="font-size:11px;padding:4px 12px;margin-bottom:16px" onclick="adminLoadEnquiries()">&#8592; All Enquiries</button>';
   out += '<h3 style="color:var(--white);font-family:var(--font-d);font-size:20px;margin-bottom:4px">Reply to Enquiry</h3>';
   out += '<p style="color:var(--muted);font-size:12px;margin-bottom:20px">Review their message, write your reply, then send.</p>';
@@ -7930,13 +7946,13 @@ function adminShowReply(eqId) {
   }
   out += '</div>';
   out += '<div style="' + SS + '"><label style="display:block;font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Your Reply *</label>';
-  out += '<textarea id="reply-msg" class="form-textarea" data-eqid=' + eid + ' style="' + IS + 'min-height:140px;resize:vertical" placeholder="Type your reply — sent as a branded email with their original message quoted underneath." oninput="_updateReplyPreview(' + eid + ')"></textarea></div>';
+  out += '<textarea id="reply-msg" class="form-textarea" data-eqid=' + eid + ' style="' + IS + 'min-height:140px;resize:vertical" placeholder="Type your reply — sent as a branded email with their original message quoted underneath." oninput="_updateReplyPreview(' + eidAttr + ')"></textarea></div>';
   out += '<h4 style="font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Preview</h4>';
   out += '<div style="border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff;margin-bottom:20px">';
   out += '<iframe id="reply-preview-frame" title="Email preview" style="width:100%;height:500px;border:0" src="about:blank"></iframe>';
   out += '</div>';
   out += '<div id="reply-error" style="color:#f44;font-size:12px;text-align:center;display:none;margin-bottom:10px"></div>';
-  out += '<button type="button" id="reply-send-btn" class="btn-primary" style="width:100%;justify-content:center;padding:14px" onclick="adminSendReply(' + eid + ')">Send to ' + _esc(eq.email) + '</button>';
+  out += '<button type="button" id="reply-send-btn" class="btn-primary" style="width:100%;justify-content:center;padding:14px" onclick="adminSendReply(' + eidAttr + ')">Send to ' + _esc(eq.email) + '</button>';
   document.getElementById('admin-content').innerHTML = out;
   _updateReplyPreview(eqId);
 }
@@ -8005,7 +8021,7 @@ function adminLoadOrders(autoOpenOrder) {
     d.orders.forEach(function(o){ _adminOrdMap[o.orderNumber] = o; });
     el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ORDERS (' + d.orders.length + ')</h3>' +
       d.orders.map(function(o){
-        var oid = JSON.stringify(o.orderNumber);
+        var oid = _esc(JSON.stringify(o.orderNumber));
         var statusBadge = o.status === 'payment-sent'
           ? '<span style="font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:rgba(76,175,80,0.15);color:#4caf50;border:1px solid rgba(76,175,80,0.3)">Sent</span>'
           : '<span style="font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">Pending</span>';
