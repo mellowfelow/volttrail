@@ -1,5 +1,5 @@
 import { checkAdminPasscode } from '../../_shared/adminAuth.js';
-import { listOrders, getOrder } from '../../_shared/orderStore.js';
+import { listOrders, getOrder, deleteOrder } from '../../_shared/orderStore.js';
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -24,4 +24,17 @@ export async function onRequestGet(context) {
 
   const orders = await listOrders(env);
   return json({ success: true, orders });
+}
+
+export async function onRequestDelete(context) {
+  const { request, env } = context;
+  const denied = checkAdminPasscode(request, env);
+  if (denied) return denied;
+
+  const url = new URL(request.url);
+  const id = url.searchParams.get('id');
+  if (!id) return json({ success: false, message: 'Missing id' }, 400);
+
+  await deleteOrder(env, id);
+  return json({ success: true });
 }

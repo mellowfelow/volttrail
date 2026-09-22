@@ -43,3 +43,12 @@ export async function markOrderSent(env, orderNumber) {
     await kv.put(`order:${orderNumber}`, JSON.stringify(order));
   }
 }
+
+export async function deleteOrder(env, orderNumber) {
+  const kv = env.VOLTTRAIL_KV;
+  if (!kv) return;
+  await kv.delete(`order:${orderNumber}`);
+  const index = JSON.parse(await kv.get('order:index') || '[]');
+  const filtered = index.filter((e) => e.orderNumber !== orderNumber);
+  await kv.put('order:index', JSON.stringify(filtered));
+}
