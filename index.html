@@ -6941,8 +6941,8 @@ function removeFromCart(i) {
         <h2 style="font-family:var(--font-d);color:var(--white);margin:0">Dashboard</h2>
         <div style="display:flex;gap:8px">
           <button class="btn-outline" onclick="adminShowDashboardHub()" style="font-size:13px;padding:8px 16px">Dashboard</button>
-          <button class="btn-primary" onclick="adminLoadEnquiries()" style="font-size:13px;padding:8px 16px">Enquiries</button>
           <button class="btn-outline" onclick="adminLoadOrders()" style="font-size:13px;padding:8px 16px">Orders</button>
+          <button class="btn-outline" onclick="adminLoadEnquiries()" style="font-size:13px;padding:8px 16px">Enquiries</button>
           <button class="btn-outline" onclick="adminLogout()" style="font-size:13px;padding:8px 16px;border-color:#f44;color:#f44">Sign Out</button>
         </div>
       </div>
@@ -7565,8 +7565,12 @@ function initAdmin() {
 function _adminEnterDash() {
   document.getElementById('admin-login').style.display='none';
   document.getElementById('admin-dash').style.display='block';
-  var _orderParam = new URLSearchParams(location.search).get('order');
-  if (_orderParam) { adminLoadOrders(_orderParam); } else { adminShowDashboardHub(); }
+  var _params = new URLSearchParams(location.search);
+  var _orderParam = _params.get('order');
+  var _enqParam = _params.get('enquiry');
+  if (_orderParam) { adminLoadOrders(_orderParam); }
+  else if (_enqParam) { adminLoadEnquiries(_enqParam); }
+  else { adminShowDashboardHub(); }
 }
 function adminLogin() {
   var p = document.getElementById('admin-pass').value.trim();
@@ -7596,17 +7600,17 @@ function adminShowDashboardHub() {
     el.innerHTML =
       '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:20px">DASHBOARD</h3>' +
       '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">' +
-        '<div style="' + cardStyle + '" onclick="adminLoadEnquiries()" onmouseover="this.style.borderColor=\'rgba(170,255,0,0.3)\'" onmouseout="this.style.borderColor=\'var(--border)\'">' +
-          '<div style="font-size:32px;margin-bottom:10px">&#128172;</div>' +
-          '<div style="font-family:var(--font-d);font-size:32px;font-weight:800;color:var(--white);margin-bottom:4px">' + enquiries.length + '</div>' +
-          '<div style="font-family:var(--font-c);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Enquiries</div>' +
-          (newEnq ? '<div style="margin-top:12px;display:inline-block;font-family:var(--font-c);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">' + newEnq + ' new</div>' : '') +
-        '</div>' +
         '<div style="' + cardStyle + '" onclick="adminLoadOrders()" onmouseover="this.style.borderColor=\'rgba(170,255,0,0.3)\'" onmouseout="this.style.borderColor=\'var(--border)\'">' +
           '<div style="font-size:32px;margin-bottom:10px">&#128230;</div>' +
           '<div style="font-family:var(--font-d);font-size:32px;font-weight:800;color:var(--white);margin-bottom:4px">' + orders.length + '</div>' +
           '<div style="font-family:var(--font-c);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Orders</div>' +
           (pendingOrd ? '<div style="margin-top:12px;display:inline-block;font-family:var(--font-c);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">' + pendingOrd + ' pending</div>' : '') +
+        '</div>' +
+        '<div style="' + cardStyle + '" onclick="adminLoadEnquiries()" onmouseover="this.style.borderColor=\'rgba(170,255,0,0.3)\'" onmouseout="this.style.borderColor=\'var(--border)\'">' +
+          '<div style="font-size:32px;margin-bottom:10px">&#128172;</div>' +
+          '<div style="font-family:var(--font-d);font-size:32px;font-weight:800;color:var(--white);margin-bottom:4px">' + enquiries.length + '</div>' +
+          '<div style="font-family:var(--font-c);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Enquiries</div>' +
+          (newEnq ? '<div style="margin-top:12px;display:inline-block;font-family:var(--font-c);font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;background:rgba(170,255,0,0.1);color:var(--volt);border:1px solid rgba(170,255,0,0.25)">' + newEnq + ' new</div>' : '') +
         '</div>' +
       '</div>';
   }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load dashboard: '+err.message+'</p>'; });
@@ -7896,7 +7900,7 @@ function adminSendPayment() {
 }
 
 // ── ENQUIRY CARDS ──
-function adminLoadEnquiries() {
+function adminLoadEnquiries(autoOpenId) {
   var el = document.getElementById('admin-content');
   el.innerHTML = '<p style="color:var(--muted)">Loading enquiries…</p>';
   fetch('/api/admin/enquiries', { headers:_adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
@@ -7921,6 +7925,7 @@ function adminLoadEnquiries() {
           (eq.message ? '<div style="font-size:12px;color:var(--dim);overflow:hidden;white-space:nowrap;text-overflow:ellipsis">' + _esc(eq.message.slice(0,100)) + (eq.message.length>100?'…':'') + '</div>' : '') +
         '</div>';
       }).join('');
+    if (autoOpenId && _adminEnqMap[autoOpenId]) { adminShowReply(autoOpenId); }
   }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load: '+err.message+'</p>'; });
 }
 

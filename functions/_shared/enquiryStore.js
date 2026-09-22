@@ -4,7 +4,7 @@ export function generateEnquiryId() {
 }
 
 export function enquiryReplyLink(id) {
-  return `https://volttrail.org/admin/reply-enquiry/?id=${encodeURIComponent(id)}`;
+  return `https://volttrail.org/admin/?enquiry=${encodeURIComponent(id)}`;
 }
 
 export async function saveEnquiry(env, enquiry) {
