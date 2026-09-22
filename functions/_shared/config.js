@@ -4,7 +4,7 @@ export const SITE = {
 };
 
 export const CONTACT = {
-  email: 'sales@volttrail.org',
+  email: 'contact@volttrail.org',
   phone: '+44 7638 207659',
   whatsapp: '+44 7638 207659',
 };
