@@ -1,5 +1,5 @@
 import { CONTACT } from '../_shared/config.js';
-import { sendMail } from '../_shared/mailer.js';
+import { sendMailBatch } from '../_shared/mailer.js';
 import { buildEmailHtml, escapeHtml } from '../_shared/emailTemplate.js';
 import { saveOrder } from '../_shared/orderStore.js';
 
@@ -97,42 +97,44 @@ export async function onRequestPost(context) {
     });
     const businessText = `New order ${order.orderNumber || ''}\n\n${itemsText}\n\nTotal: ${money(order.grandTotal)}\nPayment: ${order.paymentLabel}\n\nCustomer: ${customer.name}\nEmail: ${customer.email}\nPhone: ${customer.phone || ''}\nDeliver to: ${formatAddress(customer)}\n\nSend payment details: ${paymentLink}`;
 
-    const businessResult = await sendMail(env, {
-      to: env.EMAIL_TO || CONTACT.email,
-      subject: `New Order${order.orderNumber ? ` ${order.orderNumber}` : ''}: ${customer.name} — ${money(order.grandTotal)}`,
-      html: businessHtml,
-      text: businessText,
-      replyTo: customer.email,
+    const customerHtml = buildEmailHtml({
+      heading: order.orderNumber ? `Order Confirmed — ${order.orderNumber}` : 'Order Confirmed',
+      intro: `Thanks for your order, ${customer.name}! We've received it and you'll get a second email shortly with payment details. Once payment is confirmed, we'll dispatch your order. Keep this email as your reference.`,
+      rows: [
+        ...orderRows,
+        { label: 'Delivering To', value: formatAddress(customer) },
+        { label: 'Need Help?', value: `${CONTACT.phone} · WhatsApp ${CONTACT.whatsapp}\n${CONTACT.email}` },
+      ],
+      replyTo: CONTACT.email,
+      ctaLabel: 'Contact Us →',
+      ctaHref: `mailto:${CONTACT.email}`,
     });
+    const customerText = `Order Confirmed ${order.orderNumber || ''}\n\nThanks, ${customer.name}! You'll receive payment details shortly.\n\n${itemsText}\n\nTotal: ${money(order.grandTotal)}\nPayment: ${order.paymentLabel}\nDelivering to: ${formatAddress(customer)}\n\n${CONTACT.email} · ${CONTACT.phone}`;
 
-    if (!businessResult.sent) {
-      return json({ success: false, message: 'Email delivery is not configured yet' }, 503);
-    }
-
-    try {
-      const customerHtml = buildEmailHtml({
-        heading: order.orderNumber ? `Order Confirmed — ${order.orderNumber}` : 'Order Confirmed',
-        intro: `Thanks for your order, ${customer.name}! We've received it and you'll get a second email shortly with payment details. Once payment is confirmed, we'll dispatch your order. Keep this email as your reference.`,
-        rows: [
-          ...orderRows,
-          { label: 'Delivering To', value: formatAddress(customer) },
-          { label: 'Need Help?', value: `${CONTACT.phone} · WhatsApp ${CONTACT.whatsapp}\n${CONTACT.email}` },
-        ],
-        replyTo: CONTACT.email,
-        ctaLabel: 'Contact Us →',
-        ctaHref: `mailto:${CONTACT.email}`,
-      });
-      const customerText = `Order Confirmed ${order.orderNumber || ''}\n\nThanks, ${customer.name}! You'll receive payment details shortly.\n\n${itemsText}\n\nTotal: ${money(order.grandTotal)}\nPayment: ${order.paymentLabel}\nDelivering to: ${formatAddress(customer)}\n\n${CONTACT.email} · ${CONTACT.phone}`;
-
-      await sendMail(env, {
+    // Send both emails in one SMTP session
+    const [businessResult, customerResult] = await sendMailBatch(env, [
+      {
+        to: env.EMAIL_TO || CONTACT.email,
+        subject: `New Order${order.orderNumber ? ` ${order.orderNumber}` : ''}: ${customer.name} — ${money(order.grandTotal)}`,
+        html: businessHtml,
+        text: businessText,
+        replyTo: customer.email,
+      },
+      {
         to: customer.email,
         subject: `Order Confirmed${order.orderNumber ? ` ${order.orderNumber}` : ''} — ${money(order.grandTotal)}`,
         html: customerHtml,
         text: customerText,
         replyTo: CONTACT.email,
-      });
-    } catch (err) {
-      console.error('Order: customer email failed:', err);
+      },
+    ]);
+
+    if (!businessResult.sent) {
+      return json({ success: false, message: 'Email delivery is not configured yet' }, 503);
+    }
+
+    if (!customerResult.sent) {
+      console.error('Order: customer email failed:', customerResult.reason);
     }
 
     return json({ success: true });

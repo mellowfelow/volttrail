@@ -7600,9 +7600,9 @@ function adminLoadEnquiries() {
   var el = document.getElementById('admin-content');
   el.innerHTML = '<p style="color:var(--muted)">Loading enquiries…</p>';
   fetch('/api/admin/enquiries', { headers: _adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
-    if(!d.items || !d.items.length) { el.innerHTML = '<p style="color:var(--muted)">No enquiries yet.</p>'; return; }
-    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ENQUIRIES ('+d.items.length+')</h3>' +
-      d.items.map(function(eq){
+    if(!d.enquiries || !d.enquiries.length) { el.innerHTML = '<p style="color:var(--muted)">No enquiries yet.</p>'; return; }
+    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ENQUIRIES ('+d.enquiries.length+')</h3>' +
+      d.enquiries.map(function(eq){
         var status = eq.status === 'replied' ? '<span style="color:#4caf50">Replied</span>' : '<span style="color:var(--volt)">New</span>';
         return _adminCard(eq.name + ' — ' + status, [
           {l:'Email',v:eq.email},{l:'Phone',v:eq.phone},{l:'Interest',v:(eq.meta&&eq.meta.Interest)||''},{l:'Message',v:eq.message},{l:'Date',v:new Date(eq.createdAt).toLocaleString()}
@@ -7639,9 +7639,9 @@ function adminLoadOrders() {
   var el = document.getElementById('admin-content');
   el.innerHTML = '<p style="color:var(--muted)">Loading orders…</p>';
   fetch('/api/admin/orders', { headers: _adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
-    if(!d.items || !d.items.length) { el.innerHTML = '<p style="color:var(--muted)">No orders yet.</p>'; return; }
-    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ORDERS ('+d.items.length+')</h3>' +
-      d.items.map(function(o){
+    if(!d.orders || !d.orders.length) { el.innerHTML = '<p style="color:var(--muted)">No orders yet.</p>'; return; }
+    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ORDERS ('+d.orders.length+')</h3>' +
+      d.orders.map(function(o){
         var status = o.status === 'payment-sent' ? '<span style="color:#4caf50">Payment Sent</span>' : '<span style="color:var(--volt)">Pending</span>';
         return _adminCard(o.orderNumber + ' — ' + status, [
           {l:'Customer',v:o.customerName},{l:'Email',v:o.customerEmail},{l:'Phone',v:o.customerPhone},
