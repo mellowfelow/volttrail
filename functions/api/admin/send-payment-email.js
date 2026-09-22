@@ -13,14 +13,14 @@ function json(data, status = 200) {
 
 function paymentTermsHtml(orderId) {
   const ref = orderId || '[order number]';
-  const lines = [
-    'Faster Payments usually clears within 2 hours — we dispatch the same or next working day.',
-    `Reference ${ref} must appear on your bank transfer.`,
-    'Keep your bank receipt as proof of payment.',
-    `Questions? Reply to this email or WhatsApp ${CONTACT.whatsapp}`,
+  const waLink = `https://wa.me/${CONTACT.whatsapp.replace(/[^0-9]/g, '')}`;
+  const points = [
+    'Complete payment within <strong>48 hours</strong> to confirm this order.',
+    `Use your order number — <strong>${ref}</strong> — as the payment reference/description.`,
+    `Once paid, send a screenshot of the completed payment to <a href="mailto:${CONTACT.email}" style="color:#AAFF00;font-weight:700;text-decoration:underline;">${CONTACT.email}</a> or WhatsApp <a href="${waLink}" style="color:#AAFF00;font-weight:700;text-decoration:underline;">${CONTACT.whatsapp}</a> for confirmation.`,
   ];
   return '<ul style="margin:8px 0;padding:0 0 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#999;line-height:1.8;">' +
-    lines.map((t) => `<li>${t}</li>`).join('') + '</ul>';
+    points.map((t) => `<li style="margin-bottom:6px;">${t}</li>`).join('') + '</ul>';
 }
 
 export async function onRequestPost(context) {
@@ -95,7 +95,7 @@ export async function onRequestPost(context) {
     });
 
     const instructionsText = instructions || detail || '';
-    const text = `Hi ${nameFor || 'there'},\n\nHere are the payment details for Order ${orderNumberFor} (${amountFor}).\n\n${instructionsText}\n\nPayment Terms:\n• Faster Payments clears within 2 hours — dispatch same or next working day.\n• Reference ${orderNumberFor} must appear on your transfer.\n\n${CONTACT.email} · ${CONTACT.phone}`;
+    const text = `Hi ${nameFor || 'there'},\n\nHere are the payment details for Order ${orderNumberFor} (${amountFor}).\n\n${instructionsText}\n\nPayment Terms:\n• Complete payment within 48 hours to confirm this order.\n• Use your order number — ${orderNumberFor} — as the payment reference/description.\n• Once paid, send a screenshot of the completed payment to ${CONTACT.email} or WhatsApp ${CONTACT.whatsapp} for confirmation.\n\n${CONTACT.email} · ${CONTACT.phone}`;
 
     const result = await sendMail(env, {
       to: emailTo,

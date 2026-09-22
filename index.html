@@ -7631,15 +7631,20 @@ function _buildPreviewHtml(heading, intro, rows, ctaLabel, ctaHref) {
 function _paymentTermsLines(orderId) {
   var ref = orderId || '[order number]';
   return [
-    'Faster Payments usually clears within 2 hours — we dispatch the same or next working day.',
-    'Reference ' + ref + ' must appear on your bank transfer.',
-    'Keep your bank receipt as proof of payment.',
-    'Questions? Reply to this email or WhatsApp +44 7638 207659',
+    'Complete payment within 48 hours to confirm this order.',
+    'Use your order number — ' + ref + ' — as the payment reference/description.',
+    'Once paid, send a screenshot of the completed payment to contact@volttrail.org or WhatsApp +44 7638 207659 for confirmation.',
   ];
 }
 function _paymentTermsHtml(orderId) {
+  var ref = _esc(orderId || '[order number]');
+  var pts = [
+    'Complete payment within <strong>48 hours</strong> to confirm this order.',
+    'Use your order number — <strong>' + ref + '</strong> — as the payment reference/description.',
+    'Once paid, send a screenshot of the completed payment to <a href="mailto:contact@volttrail.org" style="color:#AAFF00;font-weight:700;text-decoration:underline;">contact@volttrail.org</a> or WhatsApp <a href="https://wa.me/447638207659" style="color:#AAFF00;font-weight:700;text-decoration:underline;">+44\u00a07638\u00a0207659</a> for confirmation.',
+  ];
   return '<ul style="margin:8px 0;padding:0 0 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#999;line-height:1.8;">' +
-    _paymentTermsLines(orderId).map(function(t){ return '<li>' + _esc(t) + '</li>'; }).join('') + '</ul>';
+    pts.map(function(t){ return '<li style="margin-bottom:6px;">' + t + '</li>'; }).join('') + '</ul>';
 }
 
 // ── PAYMENT INSTRUCTIONS DEFAULTS ──
