@@ -1709,6 +1709,36 @@
       <image:title>Centre Stand (Sur-Ron Compatible)</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://volttrail.org/product/ctrl-votol-em200-lbx/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ctrl-votol-em200-lbx.jpg</image:loc>
+      <image:title>Votol EM-200 72V Controller (Sur-Ron LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/ctrl-ewatt-72v-lbx/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ctrl-ewatt-72v-lbx.jpg</image:loc>
+      <image:title>eWatt 72V Controller (Sur-Ron LBX)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/ctrl-votol-em200-talaria/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ctrl-votol-em200-talaria.jpg</image:loc>
+      <image:title>Votol EM-200 72V Controller (Talaria Sting)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/ctrl-ewatt-72v-talaria/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ctrl-ewatt-72v-talaria.jpg</image:loc>
+      <image:title>eWatt 72V Controller (Talaria Sting)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/ctrl-ebmx-x9000-talxxx/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>    <image:image>
+      <image:loc>https://volttrail.org/images/product-ctrl-ebmx-x9000-talxxx.jpg</image:loc>
+      <image:title>EBMX X-9000 Controller (Talaria XXX)</image:title>
+    </image:image>
+  </url>
   <url><loc>https://volttrail.org/blog/surron-72v-battery-upgrade-guide/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/blog/road-legal-surron-guide-uk/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://volttrail.org/blog/talaria-sting-xxx-review-uk/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
