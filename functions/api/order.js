@@ -19,7 +19,7 @@ function formatAddress(c) {
 }
 
 function paymentEmailLink(orderNumber) {
-  return `https://volttrail.org/admin/send-payment-email/?id=${encodeURIComponent(orderNumber)}`;
+  return `https://volttrail.org/admin/?order=${encodeURIComponent(orderNumber)}`;
 }
 
 export async function onRequestPost(context) {

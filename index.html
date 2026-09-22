@@ -7574,8 +7574,15 @@ function whatsappCheckout() {
 var _adminPass = '';
 function _adminHeaders() { return { 'Content-Type': 'application/json', 'X-Admin-Passcode': _adminPass }; }
 function initAdmin() {
-  if(_adminPass) { document.getElementById('admin-login').style.display='none'; document.getElementById('admin-dash').style.display='block'; adminLoadEnquiries(); }
-  else { document.getElementById('admin-login').style.display=''; document.getElementById('admin-dash').style.display='none'; }
+  if(_adminPass) {
+    document.getElementById('admin-login').style.display='none';
+    document.getElementById('admin-dash').style.display='block';
+    var _orderParam = new URLSearchParams(location.search).get('order');
+    if (_orderParam) { adminLoadOrders(_orderParam); } else { adminLoadEnquiries(); }
+  } else {
+    document.getElementById('admin-login').style.display='';
+    document.getElementById('admin-dash').style.display='none';
+  }
 }
 function adminLogin() {
   var p = document.getElementById('admin-pass').value.trim();
@@ -7989,7 +7996,7 @@ function adminDeleteEnquiry(id) {
 }
 
 // ── ORDER CARDS ──
-function adminLoadOrders() {
+function adminLoadOrders(autoOpenOrder) {
   var el = document.getElementById('admin-content');
   el.innerHTML = '<p style="color:var(--muted)">Loading orders…</p>';
   fetch('/api/admin/orders', { headers:_adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
@@ -8025,6 +8032,7 @@ function adminLoadOrders() {
         '</div>';
       }).join('') +
       '<button class="btn-outline" style="width:100%;justify-content:center;margin-top:4px;font-size:12px" onclick="adminNewPayment()">Compose without an order &rarr;</button>';
+    if (autoOpenOrder && _adminOrdMap[autoOpenOrder]) { adminShowPayment(autoOpenOrder); }
   }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load: '+err.message+'</p>'; });
 }
 
