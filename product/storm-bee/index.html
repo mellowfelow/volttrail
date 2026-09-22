@@ -5198,9 +5198,6 @@ const SITE_ORIGIN = 'https://volttrail.org';
 // ⚠ REPLACE WITH YOUR WHATSAPP NUMBER — international format, digits only, no + or spaces.
 // Example for UK: '447700900000'  (44 = UK, then the number without the leading 0)
 const WHATSAPP_NUMBER = '447838207659';
-// ⚠ FORMSPREE ENDPOINT — POSTs all forms (orders, contact, newsletter) to contact@volttrail.org.
-// If you ever need to change this, sign up at https://formspree.io and paste the new endpoint URL.
-const FORMSPREE_URL = 'https://formspree.io/f/xvzydvpb';
 const FINCRA_PAYMENT_LINK = 'https://l.fincra.com/4Sf';
 const ROUTES = {
   'blog':            { path:'/blog',                              title:"VoltTrail Blog — Electric Dirt Bike & Quad Guides UK", desc:"Reviews, buying guides and legal advice for electric dirt bike and electric quad bike owners in the UK." },
@@ -7434,7 +7431,7 @@ function handleCheckout(e) {
     document.getElementById('fincra-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
   } else {
-    // ── BANK / KLARNA / CLEARPAY PATH: existing Formspree flow ──
+    // ── BANK / KLARNA / CLEARPAY PATH ──
     _sendOrderEmail(
       '⚠️ ACTION REQUIRED: Customer chose ' + payment + '. Send payment instructions.'
     );
@@ -7737,10 +7734,10 @@ function handleNewsletter(e) {
     if(wrap) wrap.innerHTML = `<div class="tick">✅</div><h3>You're In!</h3><p style="color:var(--muted);font-size:15px">Thanks for subscribing. Watch your inbox for new bikes, deals and riding guides.</p><a class="btn-primary" style="text-decoration:none;margin-top:24px" href="/" data-route="home">Back to Home →</a>`;
   };
   if(email) {
-    fetch(FORMSPREE_URL, {
+    fetch('/api/contact', {
       method: 'POST',
-      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ _subject: 'New newsletter subscriber', email: email, message: 'New newsletter subscriber: ' + email })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: 'Newsletter Subscriber', email: email, message: 'Newsletter signup: ' + email, interest: 'Newsletter' })
     }).catch(function(err){ console.error('Newsletter submit failed:', err); })
       .finally(showSuccess);
   } else {
