@@ -106,7 +106,7 @@ export async function onRequestPost(context) {
     });
 
     if (!businessResult.sent) {
-      return json({ success: false, message: 'Email delivery is not configured yet' }, 503);
+      return json({ success: false, message: 'Email delivery failed', reason: businessResult.reason }, 503);
     }
 
     try {
