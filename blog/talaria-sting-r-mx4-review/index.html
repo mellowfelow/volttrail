@@ -7,16 +7,16 @@
 <!-- Bing Webmaster Tools verification — paste your tag here (Sign in to BWMT → Add Site → Meta tag option).
      EASIER ALTERNATIVE: in BWMT, choose "Import from Google Search Console" and you won't need this tag.
 <meta name="msvalidate.01" content="REPLACE_WITH_YOUR_BING_VERIFICATION_CODE"> -->
-<meta name="keywords" content="talaria sting r">
+<meta name="keywords" content="electric dirt bike, electric dirt bikes UK, electric dirt bike for adults, kids electric dirt bike, road legal electric dirt bike, Sur-Ron, Talaria, Stark Varg, electric quad bike">
 <title>Talaria Sting R MX4 Review: Specs, Price & Is It Worth It?</title>
 <meta name="description" content="Talaria Sting R MX4 review for UK buyers: 8kW peak, ~53mph top speed, 60V 45Ah battery and £3,735. How it compares to the Sur-Ron Light Bee X.">
 <meta property="og:title" content="Talaria Sting R MX4 Review: Specs, Price & Is It Worth It?">
 <meta property="og:description" content="Talaria Sting R MX4 review for UK buyers: 8kW peak, ~53mph top speed, 60V 45Ah battery and £3,735. How it compares to the Sur-Ron Light Bee X.">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://volttrail.org/blog/talaria-sting-r-mx4-review/">
 <link rel="canonical" href="https://volttrail.org/blog/talaria-sting-r-mx4-review/">
-<link rel="alternate" hreflang="en-gb" href="https://volttrail.org/blog/talaria-sting-r-mx4-review/">
-<link rel="alternate" hreflang="x-default" href="https://volttrail.org/blog/talaria-sting-r-mx4-review/">
+<link rel="alternate" hreflang="en-gb" href="https://volttrail.org/">
+<link rel="alternate" hreflang="x-default" href="https://volttrail.org/">
 
 <!-- PWA / App -->
 <link rel="manifest" href="/manifest.json">
@@ -44,8 +44,8 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@volttrailuk">
-<meta name="twitter:title" content="Talaria Sting R MX4 Review: Specs, Price & Is It Worth It?">
-<meta name="twitter:description" content="Talaria Sting R MX4 review for UK buyers: 8kW peak, ~53mph top speed, 60V 45Ah battery and £3,735. How it compares to the Sur-Ron Light Bee X.">
+<meta name="twitter:title" content="Electric Dirt Bikes UK 2026 | Sur-Ron, Talaria, Stark Varg">
+<meta name="twitter:description" content="Electric dirt bikes UK — Sur-Ron, Talaria, Stark Varg, KTM &amp; Revvi. Adult, kids and road-legal electric dirt bikes. Free UK delivery, pay in 4. Shop now.">
 <meta name="twitter:image" content="https://volttrail.org/og-image.jpg">
 
 <!-- Additional SEO -->
@@ -5257,10 +5257,11 @@ const ROUTES = {
   'order-confirm':         { path: '/order-confirmation',                               title: 'Order Confirmed \u2013 VoltTrail',     desc: 'Your VoltTrail order has been confirmed. You’ll receive an email confirmation with your order details and delivery information shortly.' },
   'search':                { path: '/search',                                           title: 'Search \u2013 VoltTrail',             desc: 'Search the VoltTrail catalogue — electric dirt bikes, quad bikes, batteries, accessories and brands. Find your perfect electric off-road bike.' },
   'newsletter':            { path: '/newsletter',                                       title: 'Newsletter \u2013 VoltTrail',         desc: 'Subscribe to the VoltTrail newsletter for the latest electric dirt bike deals, new arrivals, buying guides and exclusive offers delivered to your inbox.' },
-  '404':                   { path: '/404',                                              title: 'Page Not Found \u2013 VoltTrail',     desc: 'Sorry, the page you were looking for could not be found. Browse our electric dirt bikes, quad bikes, brands and guides at VoltTrail.' }
+  '404':                   { path: '/404',                                              title: 'Page Not Found \u2013 VoltTrail',     desc: 'Sorry, the page you were looking for could not be found. Browse our electric dirt bikes, quad bikes, brands and guides at VoltTrail.' },
+  'admin':                 { path: '/admin',                                            title: 'Admin \u2013 VoltTrail',             desc: 'VoltTrail admin dashboard.' }
 };
 // Pages that should NOT be indexed (utility/transactional)
-const NOINDEX_PAGES = ['cart','checkout','order-confirm','search','newsletter','404'];
+const NOINDEX_PAGES = ['cart','checkout','order-confirm','search','newsletter','404','admin'];
 
 // Reverse lookup: path -> page id
 const PATH_TO_ID = {};
@@ -5604,19 +5605,11 @@ function showCartToast(name) {
 function handleContactForm(e) {
   e.preventDefault();
   const form = e.target;
-  const groups = form.querySelectorAll('.form-group');
-  const data = {};
-  groups.forEach(g => {
-    const l = g.querySelector('.form-label');
-    const i = g.querySelector('input, textarea, select');
-    if(l && i) data[l.textContent.replace('*','').trim()] = (i.value || '').trim();
-  });
-  const name = data['Full Name'] || data['Name'] || '';
-  const email = data['Email Address'] || data['Email'] || '';
-  const phone = data['Phone'] || '';
-  const subject = data['Subject'] || 'New enquiry from VoltTrail website';
-  const message = data['Message'] || '';
-  const body = 'New enquiry from the VoltTrail website:\n\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message + '\n';
+  const name = (document.getElementById('c-name').value || '').trim();
+  const email = (document.getElementById('c-email').value || '').trim();
+  const phone = (document.getElementById('c-phone').value || '').trim();
+  const interest = (document.getElementById('c-subject').value || '').trim();
+  const message = (document.getElementById('c-msg').value || '').trim();
   const btn = form.querySelector('[type=submit]');
   const showSuccess = function() {
     btn.textContent = '✓ Message Sent!';
@@ -5630,14 +5623,14 @@ function handleContactForm(e) {
     }, 3000);
   };
   btn.disabled = true; btn.textContent = 'Sending…';
-  fetch(FORMSPREE_URL, {
+  fetch('/api/contact', {
     method: 'POST',
-    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ _subject: subject, email: email, name: name, phone: phone, message: message, fullMessage: body })
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name, email: email, phone: phone, interest: interest, message: message })
   }).then(function(r){
-    if(!r.ok) console.error('Formspree responded with', r.status);
+    if(!r.ok) console.error('Contact API responded with', r.status);
   }).catch(function(err){
-    console.error('Formspree submit failed:', err);
+    console.error('Contact submit failed:', err);
   }).finally(function(){
     btn.disabled = false;
     showSuccess();
@@ -6956,6 +6949,29 @@ function removeFromCart(i) {
   </section>
 </div>
 
+<!-- PAGE: ADMIN DASHBOARD -->
+<div id="page-admin" class="page">
+  <section class="section" style="max-width:960px;margin:0 auto;padding-top:40px">
+    <div id="admin-login" style="max-width:400px;margin:80px auto;text-align:center">
+      <h2 style="font-family:var(--font-d);color:var(--white);margin-bottom:24px">Admin Dashboard</h2>
+      <input type="password" id="admin-pass" class="form-input" placeholder="Enter admin passcode" style="margin-bottom:16px;text-align:center">
+      <button class="btn-primary" style="width:100%;justify-content:center" onclick="adminLogin()">Sign In →</button>
+      <p id="admin-err" style="color:#f44;font-size:13px;margin-top:12px;display:none"></p>
+    </div>
+    <div id="admin-dash" style="display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+        <h2 style="font-family:var(--font-d);color:var(--white);margin:0">Dashboard</h2>
+        <div style="display:flex;gap:8px">
+          <button class="btn-primary" onclick="adminLoadEnquiries()" style="font-size:13px;padding:8px 16px">Enquiries</button>
+          <button class="btn-outline" onclick="adminLoadOrders()" style="font-size:13px;padding:8px 16px">Orders</button>
+          <button class="btn-outline" onclick="adminLogout()" style="font-size:13px;padding:8px 16px;border-color:#f44;color:#f44">Sign Out</button>
+        </div>
+      </div>
+      <div id="admin-content" style="min-height:300px"></div>
+    </div>
+  </section>
+</div>
+
 <!-- COMPARE BAR (fixed bottom) -->
 <div id="compare-bar" role="complementary" aria-label="Bike comparison bar">
   <span class="compare-label">⚖️ Compare:</span>
@@ -7348,26 +7364,39 @@ function handleCheckout(e) {
   const originalLabel = btn ? btn.innerHTML : '';
   if(btn) { btn.disabled = true; btn.innerHTML = 'Placing order…'; }
 
-  // ── Helper: fire Formspree order notification email to VoltTrail ──
-  function _sendOrderEmail(extraLine) {
-    var emailBody = body + (extraLine ? '\n' + extraLine : '');
-    fetch(FORMSPREE_URL, {
+  // ── Helper: send order via API (saves to KV + sends business & customer emails) ──
+  function _sendOrderEmail(extraLine, channel) {
+    var pi4Data = null;
+    if(pi4Selected) {
+      var instalment = total / 4;
+      pi4Data = { dueToday: instalment, instalment: instalment };
+    }
+    fetch('/api/order', {
       method: 'POST',
-      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        _subject: subject,
-        email: cEmail,
-        name: fname + ' ' + lname,
-        orderRef: orderNo,
-        phone: phone,
-        address: addr1 + (addr2 ? ', ' + addr2 : '') + ', ' + city + ', ' + post,
-        paymentMethod: payment + (pi4Selected ? ' — Pay in 4 (£' + pi4Each + ' x 4)' : ''),
-        payIn4: pi4Selected ? 'Yes — £' + pi4Each + ' x 4 instalments' : 'No',
-        notes: notes,
-        total: '£' + total.toLocaleString('en-GB'),
-        message: emailBody
+        customer: {
+          name: fname + ' ' + lname,
+          email: cEmail,
+          phone: phone,
+          address1: addr1,
+          address2: addr2,
+          city: city,
+          postcode: post
+        },
+        order: {
+          orderNumber: orderNo,
+          items: grouped.map(function(g){ return { name: g.name + (g.colour ? ' (' + g.colour + ')' : ''), price: g.num, quantity: g.qty }; }),
+          subtotal: sub,
+          discount: discount,
+          grandTotal: total,
+          shippingFree: true,
+          paymentLabel: payment + (pi4Selected ? ' — Pay in 4' : ''),
+          payIn4: pi4Data
+        },
+        channel: channel || 'email'
       })
-    }).catch(function(err) { console.error('Formspree submit failed:', err); });
+    }).catch(function(err) { console.error('Order submit failed:', err); });
   }
 
   if (payValue === 'card') {
@@ -7511,6 +7540,23 @@ function whatsappCheckout() {
   m += '────────────────\n';
   m += 'Please confirm my order and payment details. Thank you!';
   window.open(_waLink(m), '_blank');
+  // Save order via API (KV + emails)
+  var waPi4Data = null;
+  if(waPi4Selected) { waPi4Data = { dueToday: total/4, instalment: total/4 }; }
+  fetch('/api/order', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      customer: { name: fname+' '+lname, email: email, phone: phone, address1: addr1, address2: _coField('Address Line 2 (optional)'), city: city, postcode: post },
+      order: {
+        orderNumber: orderNo,
+        items: grouped.map(function(g){ return { name: g.name+(g.colour?' ('+g.colour+')':''), price: g.num, quantity: g.qty }; }),
+        subtotal: sub, discount: discount, grandTotal: total, shippingFree: true,
+        paymentLabel: payment+(waPi4Selected?' — Pay in 4':''), payIn4: waPi4Data
+      },
+      channel: 'whatsapp'
+    })
+  }).catch(function(err){ console.error('WhatsApp order submit failed:', err); });
   // Fire Meta Pixel + GA Purchase event (WhatsApp checkout path)
   try {
     const _pIds = grouped.map(g => g.name);
@@ -7525,6 +7571,106 @@ function whatsappCheckout() {
       transaction_id: orderNo, currency: 'GBP', value: total, items: _pItems
     });
   } catch(e) {}
+}
+
+// ── ADMIN DASHBOARD ──
+var _adminPass = '';
+function _adminHeaders() { return { 'Content-Type': 'application/json', 'X-Admin-Passcode': _adminPass }; }
+function initAdmin() {
+  if(_adminPass) { document.getElementById('admin-login').style.display='none'; document.getElementById('admin-dash').style.display='block'; adminLoadEnquiries(); }
+  else { document.getElementById('admin-login').style.display=''; document.getElementById('admin-dash').style.display='none'; }
+}
+function adminLogin() {
+  var p = document.getElementById('admin-pass').value.trim();
+  if(!p) return;
+  _adminPass = p;
+  fetch('/api/admin/verify', { method:'POST', headers:{ 'Content-Type':'application/json','X-Admin-Passcode':p } })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.success) { document.getElementById('admin-login').style.display='none'; document.getElementById('admin-dash').style.display='block'; adminLoadEnquiries(); }
+      else { _adminPass=''; var e=document.getElementById('admin-err'); e.textContent='Invalid passcode'; e.style.display='block'; }
+    }).catch(function(){ _adminPass=''; var e=document.getElementById('admin-err'); e.textContent='Connection error'; e.style.display='block'; });
+}
+function adminLogout() { _adminPass=''; initAdmin(); document.getElementById('admin-pass').value=''; }
+function _adminCard(title, rows, actions) {
+  var h = '<div style="background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px">';
+  h += '<div style="font-family:var(--font-d);font-size:18px;color:var(--white);margin-bottom:12px">'+title+'</div>';
+  rows.forEach(function(r){ if(r.v) h += '<div style="font-size:13px;color:var(--muted);margin-bottom:4px"><span style="color:var(--dim)">'+r.l+':</span> '+r.v+'</div>'; });
+  if(actions) { h += '<div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">'; actions.forEach(function(a){ h += '<button class="btn-primary" style="font-size:12px;padding:6px 14px" onclick="'+a.fn+'">'+a.label+'</button>'; }); h += '</div>'; }
+  return h + '</div>';
+}
+function adminLoadEnquiries() {
+  var el = document.getElementById('admin-content');
+  el.innerHTML = '<p style="color:var(--muted)">Loading enquiries…</p>';
+  fetch('/api/admin/enquiries', { headers: _adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
+    if(!d.items || !d.items.length) { el.innerHTML = '<p style="color:var(--muted)">No enquiries yet.</p>'; return; }
+    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ENQUIRIES ('+d.items.length+')</h3>' +
+      d.items.map(function(eq){
+        var status = eq.status === 'replied' ? '<span style="color:#4caf50">Replied</span>' : '<span style="color:var(--volt)">New</span>';
+        return _adminCard(eq.name + ' — ' + status, [
+          {l:'Email',v:eq.email},{l:'Phone',v:eq.phone},{l:'Interest',v:(eq.meta&&eq.meta.Interest)||''},{l:'Message',v:eq.message},{l:'Date',v:new Date(eq.createdAt).toLocaleString()}
+        ],[
+          {label:'Reply', fn:"adminShowReply('"+eq.id+"','"+eq.email.replace(/'/g,"\\'")+"','"+eq.name.replace(/'/g,"\\'")+"')"},
+          {label:'Delete', fn:"adminDeleteEnquiry('"+eq.id+"')"}
+        ]);
+      }).join('');
+  }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load: '+err.message+'</p>'; });
+}
+function adminShowReply(id, email, name) {
+  var el = document.getElementById('admin-content');
+  el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">REPLY TO '+name.toUpperCase()+'</h3>' +
+    '<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Sending to: '+email+'</p>' +
+    '<textarea id="admin-reply-msg" class="form-textarea" style="min-height:120px" placeholder="Type your reply…"></textarea>' +
+    '<div style="display:flex;gap:8px;margin-top:12px"><button class="btn-primary" onclick="adminSendReply(\''+id+'\')">Send Reply →</button><button class="btn-outline" onclick="adminLoadEnquiries()">Cancel</button></div>';
+}
+function adminSendReply(id) {
+  var msg = document.getElementById('admin-reply-msg').value.trim();
+  if(!msg) return;
+  fetch('/api/admin/reply-enquiry', { method:'POST', headers:_adminHeaders(), body:JSON.stringify({enquiryId:id,message:msg}) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){ if(d.success) adminLoadEnquiries(); else alert(d.message||'Failed'); })
+    .catch(function(err){ alert('Error: '+err.message); });
+}
+function adminDeleteEnquiry(id) {
+  if(!confirm('Delete this enquiry?')) return;
+  fetch('/api/admin/enquiries?id='+id, { method:'DELETE', headers:_adminHeaders() })
+    .then(function(r){ return r.json(); })
+    .then(function(d){ if(d.success) adminLoadEnquiries(); })
+    .catch(function(err){ alert('Error: '+err.message); });
+}
+function adminLoadOrders() {
+  var el = document.getElementById('admin-content');
+  el.innerHTML = '<p style="color:var(--muted)">Loading orders…</p>';
+  fetch('/api/admin/orders', { headers: _adminHeaders() }).then(function(r){ return r.json(); }).then(function(d){
+    if(!d.items || !d.items.length) { el.innerHTML = '<p style="color:var(--muted)">No orders yet.</p>'; return; }
+    el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">ORDERS ('+d.items.length+')</h3>' +
+      d.items.map(function(o){
+        var status = o.status === 'payment-sent' ? '<span style="color:#4caf50">Payment Sent</span>' : '<span style="color:var(--volt)">Pending</span>';
+        return _adminCard(o.orderNumber + ' — ' + status, [
+          {l:'Customer',v:o.customerName},{l:'Email',v:o.customerEmail},{l:'Phone',v:o.customerPhone},
+          {l:'Items',v:o.itemsSummary},{l:'Total',v:o.grandTotal},{l:'Amount Due',v:o.amountDue},
+          {l:'Payment',v:o.paymentLabel},{l:'Channel',v:o.channel},{l:'Address',v:o.deliveryAddress},
+          {l:'Date',v:new Date(o.createdAt).toLocaleString()}
+        ],[
+          {label:'Send Payment Email', fn:"adminShowPayment('"+o.orderNumber.replace(/'/g,"\\'")+"','"+o.customerName.replace(/'/g,"\\'")+"','"+o.amountDue.replace(/'/g,"\\'")+"')"}
+        ]);
+      }).join('');
+  }).catch(function(err){ el.innerHTML = '<p style="color:#f44">Failed to load: '+err.message+'</p>'; });
+}
+function adminShowPayment(orderId, name, amount) {
+  var el = document.getElementById('admin-content');
+  el.innerHTML = '<h3 style="color:var(--volt);font-family:var(--font-c);font-size:12px;letter-spacing:0.1em;margin-bottom:16px">SEND PAYMENT DETAILS — '+orderId+'</h3>' +
+    '<p style="color:var(--muted);font-size:13px;margin-bottom:12px">Customer: '+name+' — Amount due: '+amount+'</p>' +
+    '<textarea id="admin-payment-msg" class="form-textarea" style="min-height:140px" placeholder="Bank name: …\nSort code: …\nAccount number: …\nReference: '+orderId+'\n\nPlease transfer '+amount+' and reply to this email once paid."></textarea>' +
+    '<div style="display:flex;gap:8px;margin-top:12px"><button class="btn-primary" onclick="adminSendPayment(\''+orderId+'\')">Send Payment Details →</button><button class="btn-outline" onclick="adminLoadOrders()">Cancel</button></div>';
+}
+function adminSendPayment(orderId) {
+  var detail = document.getElementById('admin-payment-msg').value.trim();
+  if(!detail) return;
+  fetch('/api/admin/send-payment-email', { method:'POST', headers:_adminHeaders(), body:JSON.stringify({orderId:orderId,detail:detail}) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){ if(d.success) adminLoadOrders(); else alert(d.message||'Failed'); })
+    .catch(function(err){ alert('Error: '+err.message); });
 }
 
 // ── COMPARE PAGE BUILD ──
@@ -7660,6 +7806,7 @@ function _showPageFull(id) {
     if(id==='home' && typeof tpUpdateSlider==='function') { setTimeout(tpUpdateSlider, 50); }
     if(id==='cart') rebuildCartPage();
     if(id==='checkout') initCheckout();
+    if(id==='admin') initAdmin();
     if(id==='blog') renderBlogIndex();
     if(id==='compare-tool') buildComparePage();
     if(id==='sale') initSaleGrid();
