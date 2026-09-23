@@ -4884,7 +4884,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
+      {"@type":"ListItem","position":2,"name":(type==='quad'?'Electric Quad Bikes':(type==='part'?'Parts & Accessories':'Electric Dirt Bikes')),"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };
@@ -6726,7 +6726,7 @@ function removeFromCart(i) {
 {"@context":"https://schema.org/","@type":"Product","name":"Revvi 36V 3.0A Charger (18in / 20in)","sku":"VT-CHG-REVVI-36V","mpn":"chg-revvi-36v","brand":{"@type":"Brand","name":"Revvi"},"manufacturer":{"@type":"Organization","name":"Revvi"},"description":"Genuine Revvi 36V 3.0A charger for the Revvi 18in and 20in kids' electric bikes. Official OEM replacement — safe, compatible and purpose-built for the Revvi range.","category":"Parts & Accessories","image":["https://volttrail.org/images/product-chg-revvi-36v.jpg"],"url":"https://volttrail.org/product/chg-revvi-36v/","inLanguage":"en-GB","offers":{"@type":"Offer","priceCurrency":"GBP","price":39,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://volttrail.org/product/chg-revvi-36v/","priceValidUntil":"2027-12-31","seller":{"@type":"Organization","name":"VoltTrail","url":"https://volttrail.org"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":0,"currency":"GBP"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"GB"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":3,"maxValue":5,"unitCode":"DAY"}}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"GB","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn"}}}
 </script>
 <script type="application/ld+json" id="breadcrumb-jsonld">
-{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessoriess","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"Revvi 36V 3.0A Charger (18in / 20in)","item":"https://volttrail.org/product/chg-revvi-36v/"}]}
+{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessories","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"Revvi 36V 3.0A Charger (18in / 20in)","item":"https://volttrail.org/product/chg-revvi-36v/"}]}
 </script>
 <!-- SCHEMA MARKUP (JSON-LD) -->
 <script type="application/ld+json" id="sitewide-jsonld">

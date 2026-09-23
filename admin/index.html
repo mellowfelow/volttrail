@@ -4864,7 +4864,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
+      {"@type":"ListItem","position":2,"name":(type==='quad'?'Electric Quad Bikes':(type==='part'?'Parts & Accessories':'Electric Dirt Bikes')),"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };

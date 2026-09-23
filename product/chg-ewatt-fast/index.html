@@ -4884,7 +4884,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
+      {"@type":"ListItem","position":2,"name":(type==='quad'?'Electric Quad Bikes':(type==='part'?'Parts & Accessories':'Electric Dirt Bikes')),"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };
@@ -6726,7 +6726,7 @@ function removeFromCart(i) {
 {"@context":"https://schema.org/","@type":"Product","name":"eWatt / EBMX / CCW Fast Charger","sku":"VT-CHG-EWATT-FAST","mpn":"chg-ewatt-fast","brand":{"@type":"Brand","name":"eWatt"},"manufacturer":{"@type":"Organization","name":"eWatt"},"description":"The eWatt / EBMX / CCW fast charger reduces charge times by up to 150% compared to standard chargers. Compatible with all eWatt, EBMX and Charged Cycle Works battery packs for Sur-Ron and Talaria.","category":"Parts & Accessories","image":["https://volttrail.org/images/product-chg-ewatt-fast.jpg"],"url":"https://volttrail.org/product/chg-ewatt-fast/","inLanguage":"en-GB","offers":{"@type":"Offer","priceCurrency":"GBP","price":149,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://volttrail.org/product/chg-ewatt-fast/","priceValidUntil":"2027-12-31","seller":{"@type":"Organization","name":"VoltTrail","url":"https://volttrail.org"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":0,"currency":"GBP"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"GB"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":3,"maxValue":5,"unitCode":"DAY"}}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"GB","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn"}}}
 </script>
 <script type="application/ld+json" id="breadcrumb-jsonld">
-{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessoriess","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"eWatt / EBMX / CCW Fast Charger","item":"https://volttrail.org/product/chg-ewatt-fast/"}]}
+{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessories","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"eWatt / EBMX / CCW Fast Charger","item":"https://volttrail.org/product/chg-ewatt-fast/"}]}
 </script>
 <!-- SCHEMA MARKUP (JSON-LD) -->
 <script type="application/ld+json" id="sitewide-jsonld">

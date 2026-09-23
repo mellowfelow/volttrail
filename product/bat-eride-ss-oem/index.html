@@ -4884,7 +4884,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
+      {"@type":"ListItem","position":2,"name":(type==='quad'?'Electric Quad Bikes':(type==='part'?'Parts & Accessories':'Electric Dirt Bikes')),"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };
@@ -6726,7 +6726,7 @@ function removeFromCart(i) {
 {"@context":"https://schema.org/","@type":"Product","name":"E Ride Pro SS 72V 40Ah OEM Battery","sku":"VT-BAT-ERIDE-SS-OEM","mpn":"bat-eride-ss-oem","brand":{"@type":"Brand","name":"E Ride Pro"},"manufacturer":{"@type":"Organization","name":"E Ride Pro"},"description":"Genuine E Ride Pro OEM 72V 40Ah replacement battery for the SS 2.0 — factory-spec lithium cells with integrated BMS. Restores full power and range to your E Ride Pro SS electric dirt bike.","category":"Parts & Accessories","image":["https://volttrail.org/images/product-bat-eride-ss-oem.jpg"],"url":"https://volttrail.org/product/bat-eride-ss-oem/","inLanguage":"en-GB","offers":{"@type":"Offer","priceCurrency":"GBP","price":699,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://volttrail.org/product/bat-eride-ss-oem/","priceValidUntil":"2027-12-31","seller":{"@type":"Organization","name":"VoltTrail","url":"https://volttrail.org"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":0,"currency":"GBP"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"GB"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":3,"maxValue":5,"unitCode":"DAY"}}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"GB","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn"}}}
 </script>
 <script type="application/ld+json" id="breadcrumb-jsonld">
-{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessoriess","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"E Ride Pro SS 72V 40Ah OEM Battery","item":"https://volttrail.org/product/bat-eride-ss-oem/"}]}
+{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessories","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"E Ride Pro SS 72V 40Ah OEM Battery","item":"https://volttrail.org/product/bat-eride-ss-oem/"}]}
 </script>
 <!-- SCHEMA MARKUP (JSON-LD) -->
 <script type="application/ld+json" id="sitewide-jsonld">

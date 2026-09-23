@@ -4884,7 +4884,7 @@ function _injectProductSchema(item) {
     "@context":"https://schema.org/","@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":SITE_ORIGIN+'/'},
-      {"@type":"ListItem","position":2,"name":catName+'s',"item":SITE_ORIGIN+catPath+'/'},
+      {"@type":"ListItem","position":2,"name":(type==='quad'?'Electric Quad Bikes':(type==='part'?'Parts & Accessories':'Electric Dirt Bikes')),"item":SITE_ORIGIN+catPath+'/'},
       {"@type":"ListItem","position":3,"name":item.name,"item":url}
     ]
   };
@@ -6726,7 +6726,7 @@ function removeFromCart(i) {
 {"@context":"https://schema.org/","@type":"Product","name":"Gladiator 60 Touring 60V 70Ah – LBX","sku":"VT-BAT-LBX-CHI-60TOUR","mpn":"bat-lbx-chi-60tour","brand":{"@type":"Brand","name":"Chi Battery"},"manufacturer":{"@type":"Organization","name":"Chi Battery"},"description":"The Chi Battery Gladiator 60 Touring 60V 70Ah is the maximum-range upgrade for Sur-Ron LBX riders — 70Ah capacity gives the longest possible ride time while remaining compatible with the OEM controller and motor.","category":"Parts & Accessories","image":["https://volttrail.org/images/product-bat-lbx-chi-60tour.jpg"],"url":"https://volttrail.org/product/bat-lbx-chi-60tour/","inLanguage":"en-GB","offers":{"@type":"Offer","priceCurrency":"GBP","price":1049,"availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://volttrail.org/product/bat-lbx-chi-60tour/","priceValidUntil":"2027-12-31","seller":{"@type":"Organization","name":"VoltTrail","url":"https://volttrail.org"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":0,"currency":"GBP"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"GB"},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":3,"maxValue":5,"unitCode":"DAY"}}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"GB","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":14,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn"}}}
 </script>
 <script type="application/ld+json" id="breadcrumb-jsonld">
-{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessoriess","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"Gladiator 60 Touring 60V 70Ah – LBX","item":"https://volttrail.org/product/bat-lbx-chi-60tour/"}]}
+{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://volttrail.org/"},{"@type":"ListItem","position":2,"name":"Parts & Accessories","item":"https://volttrail.org/parts-accessories/"},{"@type":"ListItem","position":3,"name":"Gladiator 60 Touring 60V 70Ah – LBX","item":"https://volttrail.org/product/bat-lbx-chi-60tour/"}]}
 </script>
 <!-- SCHEMA MARKUP (JSON-LD) -->
 <script type="application/ld+json" id="sitewide-jsonld">
