@@ -110,6 +110,10 @@ src="https://www.facebook.com/tr?id=885909734522788&ev=PageView&noscript=1"/></n
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Barlow+Condensed:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Hero is a CSS background-image (.hero-bg), invisible to the browser's preload scanner until
+     app.css has downloaded and parsed. Preload it explicitly so it fetches in parallel instead of
+     serially after CSS -- this is the page's LCP element. -->
+<link rel="preload" as="image" fetchpriority="high" href="/hero-background.jpg">
 <link rel="stylesheet" href="/css/app.css">
 <script src="/js/webmcp.js" defer></script>
 <!--Start of Tawk.to Script-->
