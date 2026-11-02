@@ -615,6 +615,52 @@
     </image:image>
   </url>
   <url>
+    <loc>https://volttrail.org/product/ecorider-explorer-s/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ecorider-explorer-s.jpg</image:loc>
+      <image:title>Explorer S Electric Quad</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/ecorider-explorer-gts/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-ecorider-explorer-gts.jpg</image:loc>
+      <image:title>Explorer GTS Electric Quad</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-ecorider-explorer-60v/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ecorider-explorer-60v.jpg</image:loc>
+      <image:title>Eco Rider Explorer 60V Replacement Battery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-ecorider-gt-gts-60v/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+      <image:image>
+      <image:loc>https://volttrail.org/images/product-bat-ecorider-gt-gts-60v.jpg</image:loc>
+      <image:title>Eco Rider Explorer GT &amp; GTS 60V Replacement Battery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://volttrail.org/product/bat-segway-xaber/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://volttrail.org/product/ecorider-explorer/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
