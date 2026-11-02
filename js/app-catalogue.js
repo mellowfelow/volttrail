@@ -925,7 +925,7 @@ const NOINDEX_PAGES = ['cart','checkout','order-confirm','search','newsletter','
 
 // Reverse lookup: path -> page id
 const PATH_TO_ID = {};
-Object.keys(ROUTES).forEach(id => { PATH_TO_ID[ROUTES[id].path] = id; });
+Object.keys(ROUTES).forEach(id => { const p = ROUTES[id].path.replace(/\/+$/, '') || '/'; PATH_TO_ID[p] = id; });
 
 function _setMeta(name, content, attr) {
   attr = attr || 'name';
